@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const CustomerSchema = new Schema({
+const RentOwnerSchema = new Schema({
   email: String,
   username: String,
   password: String,
@@ -9,5 +9,5 @@ const CustomerSchema = new Schema({
   phoneNumber: String
 });
 
-const Customer = mongoose.model("customer", CustomerSchema);
-module.exports = Customer;
+const RentOwner = mongoose.model("rentOwner", RentOwnerSchema);
+module.exports = RentOwner;
