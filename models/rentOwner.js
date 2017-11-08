@@ -6,7 +6,13 @@ const RentOwnerSchema = new Schema({
   username: String,
   password: String,
   address: String,
-  phoneNumber: String
+  phoneNumber: String,
+  cars: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "car"
+    }
+  ]
 });
 
 const RentOwner = mongoose.model("rentOwner", RentOwnerSchema);
