@@ -4,19 +4,19 @@ export default class Header extends Component {
   render() {
     return (
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper teal lighten-1">
           <a href="#" class="brand-logo">
             Logo
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">Sass</a>
+              <a href="#">Rent Car</a>
             </li>
             <li>
-              <a href="badges.html">Components</a>
+              <a href="#">Register</a>
             </li>
             <li>
-              <a href="collapsible.html">JavaScript</a>
+              <a href="#">Login</a>
             </li>
           </ul>
         </div>
