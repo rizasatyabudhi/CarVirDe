@@ -3,11 +3,12 @@ import ReactDOM from "react-dom";
 import "./style/index.css";
 import App from "./components/App";
 import registerServiceWorker from "./registerServiceWorker";
-import "semantic-ui/dist/semantic.css";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+
+import "materialize-css/dist/css/materialize.min.css";
 
 import reducers from "./reducers/index";
 const store = createStore(
