@@ -7,5 +7,12 @@ module.exports = {
     RentOwner.create(rentOwnerProps)
       .then(owner => res.send("register success"))
       .catch(next);
+  },
+  addCar(req, res, next) {
+    const carProps = req.body;
+    const newCar = new Car(carProps);
+    RentOwner.findById({ _id: req._id })
+      .then(carOwner => carOwner.cars.push(newCar))
+      .save();
   }
 };

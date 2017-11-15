@@ -1,4 +1,5 @@
 const Customer = require("../models/customer");
+const Car = require("../models/car");
 
 module.exports = {
   registerCust(req, res, next) {
