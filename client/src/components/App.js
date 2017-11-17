@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import "../style/App.css";
+import "../style/_RentCar.css";
 
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
