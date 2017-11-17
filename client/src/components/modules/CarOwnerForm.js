@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-export default class CustomerForm extends Component {
+export default class CarOwnerForm extends Component {
   render() {
     return (
       <div className="row ">
         <form className="col s12 center-align">
           <div className="card-panel z-depth-2" style={{ marginTop: "3em" }}>
             <div className="col s12">
-              <h2>Customer</h2>
+              <h2>Car Owner</h2>
             </div>
             <div className="row">
               <div className="input-field col s6">

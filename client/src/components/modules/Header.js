@@ -1,22 +1,20 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
     return (
       <nav>
-        <div class="nav-wrapper teal lighten-1">
-          <a href="#" class="brand-logo">
-            Logo
-          </a>
+        <div class="nav-wrapper deep-purple darken-3 lighten-1">
+          <Link to={"/"} className="brand-logo" style={{ marginLeft: "1em" }}>
+            CarVirde
+          </Link>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="#">Rent Car</a>
+              <Link to={"register"}>Register</Link>
             </li>
             <li>
-              <a href="#">Register</a>
-            </li>
-            <li>
-              <a href="#">Login</a>
+              <Link to={"login"}>Login</Link>
             </li>
           </ul>
         </div>
