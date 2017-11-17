@@ -7,7 +7,10 @@ export default class CarCard extends Component {
         <div className="col s6">
           <div className="card hoverable">
             <div className="card-image">
-              <img src={this.props.image} />
+              <img
+                src={this.props.image}
+                style={{ width: "460px", height: "280px" }}
+              />
               <span className="card-title">{this.props.title}</span>
               <a className="btn-floating halfway-fab waves-effect waves-light red z-depth-4">
                 <i className="material-icons">add</i>

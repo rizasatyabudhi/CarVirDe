@@ -15,9 +15,14 @@ export default class RentCar extends Component {
           harga="Rp 150.000"
         />
         <CarCard
-          className="right-align"
-          title="Kijang Innova"
           image="http://assets.autobild.co.id/media/article_image/cover/original/12495-pesanan-toyota-kijang-innova-baru-didominasi-warna-hitam-dan-putih.jpg"
+          title="Kijang Innova"
+          tipe="Kijang Innova"
+          merk="Toyota"
+          transmisi="Manual"
+          tahun="2016"
+          kapasitas="7 "
+          harga="Rp 250.000"
         />
         <CarCard
           title="Honda Jazz"
