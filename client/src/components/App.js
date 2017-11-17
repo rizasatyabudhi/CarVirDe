@@ -6,7 +6,10 @@ import "../style/App.css";
 
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
+import RentCar from "./pages/RentCar";
+
 import Header from "./modules/Header";
+
 class App extends Component {
   render() {
     return (
@@ -16,6 +19,7 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/rentCar" component={RentCar} />
           </div>
         </BrowserRouter>
       </div>

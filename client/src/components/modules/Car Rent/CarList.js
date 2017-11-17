@@ -4,8 +4,10 @@ export default class componentName extends Component {
   render() {
     return (
       <div>
-        <div className="card-panel hoverable">
-          <h2>Landing</h2>
+        <div class="row">
+          <div class="col s3">hehe</div>
+
+          <div class="col s9">haha</div>
         </div>
       </div>
     );

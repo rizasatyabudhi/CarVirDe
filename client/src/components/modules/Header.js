@@ -9,12 +9,15 @@ export default class Header extends Component {
           <Link to={"/"} className="brand-logo" style={{ marginLeft: "1em" }}>
             CarVirde
           </Link>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul class="right">
             <li>
               <Link to={"register"}>Register</Link>
             </li>
             <li>
               <Link to={"login"}>Login</Link>
+            </li>
+            <li>
+              <Link to={"rentCar"}>Rent a Car</Link>
             </li>
           </ul>
         </div>
