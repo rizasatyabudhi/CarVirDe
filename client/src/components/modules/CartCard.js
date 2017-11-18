@@ -4,14 +4,56 @@ export class CarCart extends Component {
   render() {
     return (
       <div class="col s12">
-        <div class="card-panel hoverable">
+        <div class="card-panel hoverable hover">
           <h5>Car Order</h5>
           <div className="row">
             <div className="col s10">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium delectus est, aliquam minima a excepturi, facere sequi
-              similique doloremque eos molestias quod ad eius temporibus saepe
-              totam nihil asperiores iste!
+              <div className="card-content  ">
+                <div className="row">
+                  <div className="col s6">
+                    <ul>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">Tipe Mobil &nbsp;:</span>
+                            {this.props.tipe}
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">Merk Mobil &nbsp;:</span>
+                            {this.props.merk}
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col s6">
+                    <ul>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">
+                              Tahun &nbsp;&nbsp;&nbsp;&nbsp;:
+                            </span>
+                            {this.props.tahun}
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">Transmisi &nbsp;: </span>
+                            {this.props.transmisi}
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="col s2">
               <h5>Rp 500.000</h5>
@@ -57,7 +99,9 @@ export class TotalPriceCart extends Component {
               style={{ width: "300px", display: "inline-block" }}
             >
               <span class="white-text">
-                <h5>Total Price: Rp.500000</h5>
+                <h5>
+                  Total Price: <br /> Rp 700.000
+                </h5>
               </span>
             </div>
           </div>
