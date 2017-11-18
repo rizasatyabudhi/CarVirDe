@@ -37,9 +37,9 @@ export default class AttractionCard extends Component {
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h5>Jogja Bay Waterpark</h5>
+              <h5 style={{ marginBottom: "20px" }}>Jogja Bay Waterpark</h5>
               <div className="row">
-                <div className="col s6">
+                <div className="col s3">
                   <ul>
                     <li>
                       <i className="material-icons">location_on</i> Depok
@@ -50,20 +50,13 @@ export default class AttractionCard extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col s12 paragraph">
+                <div className="col s9 paragraph">
                   Have a fun-filled day at European thematic water park with
                   family and friends Enjoy your holiday with exciting rides and
                   educational program that are suitable for all ages Get some
                   information on 'How to survive in Tsunami and earthquake' in
                   South Beach pool Show your Traveloka E-ticket for hassle-free
-                  experience The best place to cool down in this scorching hot
-                  weather together with your family and loved ones is definitely
-                  at Jogja Bay Waterpark, a 7-hectare pirates-themed waterpark
-                  with a lot of exciting attractions and rides! Pump your
-                  adrenaline with exciting rides such as Memo Racer, Volcano
-                  Coaster, Time Rider, and South Beach or just relax in family
-                  rides such as Donte Wild River and other several children
-                  water rides
+                  experience
                 </div>
               </div>
             </div>

@@ -20,6 +20,9 @@ export default class Header extends Component {
               <Link to={"rentCar"}>Rent a Car</Link>
             </li>
             <li>
+              <Link to={"addCar"}>Add Car</Link>
+            </li>
+            <li>
               <Link to={"attraction"}>Attraction</Link>
             </li>
             <li>

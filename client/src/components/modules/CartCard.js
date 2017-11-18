@@ -73,10 +73,54 @@ export class AttractionCart extends Component {
           <h5>Attraction Order</h5>
           <div className="row">
             <div className="col s10">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium delectus est, aliquam minima a excepturi, facere sequi
-              similique doloremque eos molestias quod ad eius temporibus saepe
-              totam nihil asperiores iste!
+              <div className="card-content  ">
+                <div className="row">
+                  <div className="col s6">
+                    <ul>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">
+                              Attraction Name&nbsp;:
+                            </span>
+                            {this.props.tipe}
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">Location&nbsp;:</span>
+                            {this.props.merk}
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col s6">
+                    <ul>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category">
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                            </span>
+                            {this.props.tahun}
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="row">
+                          <div className="col s12">
+                            <span className="category"> &nbsp; </span>
+                            {this.props.transmisi}
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="col s2">
               <h5>Rp 200.000</h5>
@@ -96,7 +140,7 @@ export class TotalPriceCart extends Component {
           <div class="col s12 center-align">
             <div
               class="card-panel teal z-depth-4"
-              style={{ width: "300px", display: "inline-block" }}
+              style={{ display: "inline-block" }}
             >
               <span class="white-text">
                 <h5>
