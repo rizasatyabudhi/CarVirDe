@@ -48,19 +48,35 @@ export default class AttractionCard extends Component {
                       <i className="material-icons">attach_money</i> Rp 50.000
                       /Pax
                     </li>
-                    <li>
-                      <i className="material-icons">attach_money</i>
-                    </li>
                   </ul>
                 </div>
-                <div className="col s6">
-                  <datepickerTimesheet />
+                <div className="col s12 paragraph">
+                  Have a fun-filled day at European thematic water park with
+                  family and friends Enjoy your holiday with exciting rides and
+                  educational program that are suitable for all ages Get some
+                  information on 'How to survive in Tsunami and earthquake' in
+                  South Beach pool Show your Traveloka E-ticket for hassle-free
+                  experience The best place to cool down in this scorching hot
+                  weather together with your family and loved ones is definitely
+                  at Jogja Bay Waterpark, a 7-hectare pirates-themed waterpark
+                  with a lot of exciting attractions and rides! Pump your
+                  adrenaline with exciting rides such as Memo Racer, Volcano
+                  Coaster, Time Rider, and South Beach or just relax in family
+                  rides such as Donte Wild River and other several children
+                  water rides
                 </div>
               </div>
             </div>
 
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <button
+                class="btn waves-effect waves-light"
+                type="submit"
+                name="action"
+              >
+                Add to Cart
+                <i class="material-icons right">add_shopping_cart</i>
+              </button>
             </div>
           </div>
         </div>

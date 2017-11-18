@@ -16,7 +16,7 @@ export default class CarCard extends Component {
                 <i className="material-icons">add_shopping_cart</i>
               </a>
             </div>
-            <div className="card-content  deep-purple lighten-5">
+            <div className="card-content  ">
               <div className="row">
                 <div className="col s6">
                   <ul>
