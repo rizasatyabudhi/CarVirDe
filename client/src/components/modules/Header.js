@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Header extends Component {
   render() {
     return (
-      <nav>
+      <nav style={{ marginBottom: "20px" }}>
         <div class="nav-wrapper deep-purple darken-3 lighten-1">
           <Link to={"/"} className="brand-logo" style={{ marginLeft: "1em" }}>
             CarVirde

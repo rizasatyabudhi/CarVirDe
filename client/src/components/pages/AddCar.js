@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import AddCarForm from "../modules/Forms/AddCarForm";
 
 export default class AddCar extends Component {
   render() {
     return (
-      <div>
-        <h2>Add Car Form</h2>
+      <div className="container">
+        <AddCarForm />
       </div>
     );
   }
