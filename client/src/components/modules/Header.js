@@ -19,6 +19,14 @@ export default class Header extends Component {
             <li>
               <Link to={"rentCar"}>Rent a Car</Link>
             </li>
+            <li>
+              <Link to={"attraction"}>Attraction</Link>
+            </li>
+            <li>
+              <Link to={"attraction"}>
+                <i className="material-icons">shopping_cart</i>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
