@@ -23,7 +23,7 @@ export default class Header extends Component {
               <Link to={"attraction"}>Attraction</Link>
             </li>
             <li>
-              <Link to={"attraction"}>
+              <Link to={"cart"}>
                 <i className="material-icons">shopping_cart</i>
               </Link>
             </li>

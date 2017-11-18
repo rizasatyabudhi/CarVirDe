@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import Register from "./pages/Register";
 import RentCar from "./pages/RentCar";
 import Attraction from "./pages/Attraction";
+import Cart from "./pages/Cart";
 
 import Header from "./modules/Header";
 
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/rentCar" component={RentCar} />
             <Route exact path="/attraction" component={Attraction} />
+            <Route exact path="/cart" component={Cart} />
           </div>
         </BrowserRouter>
       </div>
