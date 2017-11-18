@@ -6,7 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 export default class Register extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Tabs>
           <TabList>
             <div className="center-align">

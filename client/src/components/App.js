@@ -12,11 +12,12 @@ import Attraction from "./pages/Attraction";
 import Cart from "./pages/Cart";
 import AddCar from "./pages/AddCar";
 import Header from "./modules/Header";
+import Footer from "./modules/Footer";
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="">
         <BrowserRouter>
           <div>
             <Header />
@@ -25,6 +26,8 @@ class App extends Component {
             <Route exact path="/rentCar" component={RentCar} />
             <Route exact path="/attraction" component={Attraction} />
             <Route exact path="/addCar" component={AddCar} />
+            <Route exact path="/cart" component={Cart} />
+            <Footer />
           </div>
         </BrowserRouter>
       </div>
