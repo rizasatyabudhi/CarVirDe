@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addCar, addCar2 } from "../../../actions/actions";
+import { addCar } from "../../../actions/actions";
 import { Field, reduxForm, initialize } from "redux-form";
 
 class AddCarForm extends Component {
@@ -21,7 +21,9 @@ class AddCarForm extends Component {
   }
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.addCar(this.state);
+    this.props.addCar(this.state).then(() => {
+      alert("SUCCESS");
+    });
   }
 
   render() {
@@ -112,4 +114,4 @@ class AddCarForm extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { addCar, addCar2 })(AddCarForm);
+export default connect(mapStateToProps, { addCar })(AddCarForm);

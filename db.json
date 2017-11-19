@@ -1,26 +1,6 @@
 {
   "cars": [
     {
-      "judul": "Honda Jazz",
-      "tipe": "Jazz",
-      "merk": "Honda",
-      "kapasitas": "5",
-      "transmisi": "Automatic",
-      "tahun": "2015",
-      "harga": "150.000",
-      "alamat": "Jalan Kaliurang"
-    },
-    {
-      "judul": "Toyota Fortuner",
-      "tipe": "Fortuner",
-      "merk": "Toyota",
-      "kapasitas": "7",
-      "transmisi": "Automatic",
-      "tahun": "2013",
-      "harga": "350.000",
-      "alamat": "Jalan Prawirotaman"
-    },
-    {
       "judul": "Toyota Fortuner",
       "tipe": "Fortuner",
       "merk": "Toyota",
@@ -42,16 +22,6 @@
       "id": "haha"
     },
     {
-      "tipe": "fewfw",
-      "merk": "few",
-      "kapasitas": "fewok",
-      "transmisi": "fewo",
-      "tahun": "fewoj",
-      "harga": "fewko",
-      "alamat": "fewfw",
-      "id": "f2c6b011-3eee-4819-9f8e-d37ebfeda5ac"
-    },
-    {
       "tipe": "Avanza",
       "merk": "Toyota",
       "kapasitas": "5",
@@ -69,8 +39,21 @@
       "tahun": "YEYEY",
       "harga": "EYYE",
       "alamat": "YEYYEE",
-      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
+      "foto":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
       "id": "509ba72c-3089-4c41-b895-6c6cdd9c4298"
+    },
+    {
+      "tipe": "HAHAH",
+      "merk": "HAHAH",
+      "kapasitas": "AHAH",
+      "transmisi": "AHHA",
+      "tahun": "AHAH",
+      "harga": "HAHA",
+      "alamat": "AHHA",
+      "foto":
+        "http://st.motortrend.com/uploads/sites/10/2016/11/2017-Honda-Civic-Hatchback-Sport-Touring-front-three-quarter-in-motion-10-1.jpg",
+      "id": "b8954e83-a7e3-4df1-8a35-13ad29aa7b45"
     }
   ],
   "attractions": [

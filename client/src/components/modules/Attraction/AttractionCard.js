@@ -32,7 +32,7 @@ export default class AttractionCard extends Component {
           <div class="card-image large">
             <img
               src="https://www.whitewaterwest.com/drive/uploads/2016/08/Waterbom-Bali-Kuta-Bali.jpg"
-              style={{ width: "200px", height: "200px" }}
+              style={{ width: "200px", height: "217px" }}
             />
           </div>
           <div class="card-stacked">
