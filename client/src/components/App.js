@@ -11,8 +11,10 @@ import RentCar from "./pages/RentCar";
 import Attraction from "./pages/Attraction";
 import Cart from "./pages/Cart";
 import AddCar from "./pages/AddCar";
+import addAttraction from "./pages/AddAttraction";
 import Header from "./modules/Header";
 import Footer from "./modules/Footer";
+import AddAttraction from "./pages/AddAttraction";
 
 class App extends Component {
   render() {
@@ -26,6 +28,7 @@ class App extends Component {
             <Route exact path="/rentCar" component={RentCar} />
             <Route exact path="/attraction" component={Attraction} />
             <Route exact path="/addCar" component={AddCar} />
+            <Route exact path="/addAttraction" component={AddAttraction} />
             <Route exact path="/cart" component={Cart} />
             <Footer />
           </div>

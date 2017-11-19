@@ -11,24 +11,47 @@ export default class AddCarForm extends Component {
             </div>
             <div className="row">
               <div className="input-field col s6">
-                <input
-                  placeholder="Placeholder"
-                  id="first_name"
-                  type="text"
-                  class="validate"
-                />
-                <label for="first_name">First Name</label>
+                <label style={{ marginTop: "-30px" }}>Tipe Mobil</label>
+                <input type="text" />
               </div>
               <div className="input-field col s6">
-                <input type="text" placeholder="Email" />
+                <label style={{ marginTop: "-30px" }}>Merk Mobil</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Merk Mobil</label>
+                <input type="text" />
+              </div>
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Transmisi</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Kapasitas</label>
+                <input type="text" />
+              </div>
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Harga/hari</label>
+                <input type="text" />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input type="text" placeholder="Address" />
+                <label style={{ marginTop: "-30px" }}>Alamat</label>
+                <input type="text" />
               </div>
-              <div className="input-field col s12">
-                <input type="text" placeholder="Phone Number" />
+            </div>
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Upload Foto Mobil</span>
+                <input type="file" />
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" />
               </div>
             </div>
             <button className="btn deep-purple darken-3 waves-effect waves-light">
