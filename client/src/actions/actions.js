@@ -20,10 +20,20 @@ export function fetchCars() {
   };
 }
 
-// export function fetchCars() {
-//   const request = axios.get(`${baseURL}/cars`);
-//   return {
-//     type: "FETCH_CARS",
-//     payload: request
-//   };
-// }
+export function fetchAttractions() {
+  return function(dispatch) {
+    return axios({
+      method: "GET",
+      url: `${baseURL}/attractions`,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      }
+    }).then(res => {
+      store.dispatch({
+        type: "FETCH_ATTRACTIONS",
+        payload: res.data
+      });
+      return res;
+    });
+  };
+}

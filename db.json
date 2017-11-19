@@ -19,16 +19,16 @@
       "alamat": "Jalan Prawirotaman"
     }
   ],
-  "companies": [
+  "attractions": [
     {
-      "id": "1",
-      "name": "Apple",
-      "description": "Apple"
+      "name": "Jogja Bay Waterpark",
+      "lokasi": "Depok",
+      "harga": "50.000"
     },
     {
-      "id": "2",
-      "name": "Google",
-      "description": "Search"
+      "name": "Sindu Kusuma Edu Park",
+      "lokasi": "Condongcatur",
+      "harga": "100.000"
     }
   ]
 }

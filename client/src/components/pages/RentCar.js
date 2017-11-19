@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import CarCard from "../modules/Car Rent/CarCard";
-import { fetchCars } from "../../actions/actions";
+import { fetchCars, fetchAttractions } from "../../actions/actions";
 
 class RentCar extends Component {
   componentWillMount() {
     this.props.fetchCars();
+    this.props.fetchAttractions();
   }
   render() {
     return (
@@ -68,4 +69,6 @@ class RentCar extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { fetchCars })(RentCar);
+export default connect(mapStateToProps, { fetchCars, fetchAttractions })(
+  RentCar
+);
