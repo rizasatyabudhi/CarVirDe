@@ -30,11 +30,18 @@ class AddAttractionForm extends Component {
               <h2>Tambah Tempat Wisata</h2>
             </div>
             <div className="row">
-              <div className="input-field col s12">
+              <div className="input-field col s6">
                 <label style={{ marginTop: "-30px" }}>Nama Tempat Wisata</label>
                 <input
                   type="text"
                   onChange={e => this.setState({ nama: e.target.value })}
+                />
+              </div>
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Harga /pax</label>
+                <input
+                  type="text"
+                  onChange={e => this.setState({ harga: e.target.value })}
                 />
               </div>
               <div className="input-field col s12">
@@ -42,13 +49,6 @@ class AddAttractionForm extends Component {
                 <input
                   type="text"
                   onChange={e => this.setState({ alamat: e.target.value })}
-                />
-              </div>
-              <div className="input-field col s12">
-                <label style={{ marginTop: "-30px" }}>Harga /pax</label>
-                <input
-                  type="text"
-                  onChange={e => this.setState({ harga: e.target.value })}
                 />
               </div>
               <div className="input-field col s12">
