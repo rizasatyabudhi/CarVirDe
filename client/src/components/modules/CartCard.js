@@ -117,13 +117,11 @@ export class TotalPriceCart extends Component {
         <div class="row">
           <div class="col s12 center-align">
             <div
-              class="card-panel teal z-depth-4"
-              style={{ display: "inline-block" }}
+              style={{ display: "inline-block", marginRight: "65px" }}
+              className="right"
             >
-              <span class="white-text">
-                <h5>
-                  Total Price: <br /> Rp {this.props.total}
-                </h5>
+              <span class="black-text">
+                <h5>Total Price: Rp {this.props.total}</h5>
               </span>
             </div>
           </div>
