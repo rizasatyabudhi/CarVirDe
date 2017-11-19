@@ -56,7 +56,7 @@ export class CarCart extends Component {
               </div>
             </div>
             <div className="col s2">
-              <h5>Rp 500.000</h5>
+              <h5>Rp {this.props.harga}</h5>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ export class AttractionCart extends Component {
                             <span className="category">
                               Attraction Name&nbsp;:
                             </span>
-                            {this.props.tipe}
+                            {this.props.nama}
                           </div>
                         </div>
                       </li>
@@ -91,29 +91,7 @@ export class AttractionCart extends Component {
                         <div className="row">
                           <div className="col s12">
                             <span className="category">Location&nbsp;:</span>
-                            {this.props.merk}
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col s6">
-                    <ul>
-                      <li>
-                        <div className="row">
-                          <div className="col s12">
-                            <span className="category">
-                              &nbsp;&nbsp;&nbsp;&nbsp;
-                            </span>
-                            {this.props.tahun}
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="row">
-                          <div className="col s12">
-                            <span className="category"> &nbsp; </span>
-                            {this.props.transmisi}
+                            {this.props.alamat}
                           </div>
                         </div>
                       </li>
@@ -123,7 +101,7 @@ export class AttractionCart extends Component {
               </div>
             </div>
             <div className="col s2">
-              <h5>Rp 200.000</h5>
+              <h5>Rp {this.props.harga}</h5>
             </div>
           </div>
         </div>
@@ -144,7 +122,7 @@ export class TotalPriceCart extends Component {
             >
               <span class="white-text">
                 <h5>
-                  Total Price: <br /> Rp 700.000
+                  Total Price: <br /> Rp {this.props.total}
                 </h5>
               </span>
             </div>

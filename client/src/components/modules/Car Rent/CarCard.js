@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { ReduxSelect } from "../ReduxSelect";
 export default class CarCard extends Component {
   render() {
     return (

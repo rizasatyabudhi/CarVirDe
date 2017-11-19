@@ -1,3 +1,8 @@
 .paragraph {
   text-align: justify;
 }
+
+.numOfOrder {
+  display: inline-block;
+  margin-left: 5px;
+}

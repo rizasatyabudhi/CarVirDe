@@ -4,17 +4,7 @@ import { store } from "../../index";
 import { connect } from "react-redux";
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      orders: 0
-    };
-  }
-  componentDidUpdate() {
-    const { orders = {} } = this.props;
-    Object.keys(orders).length == 0 && this.setState({ orders: orders + 1 });
-    console.log(this.state.orders, "INI NIHH");
-  }
+  componentDidUpdate() {}
   render() {
     const { orders = {} } = this.props;
     return (
@@ -47,11 +37,16 @@ class Header extends Component {
                 <i className="material-icons">shopping_cart</i>
               </Link>
             </li>
-            {orders && (
-              <li>
-                <p>Hhe</p>
-              </li>
-            )}
+            <li
+              className="valign-wrapper"
+              style={{ marginRight: "20px", marginLeft: "-13px" }}
+            >
+              {store.getState().orders.length !== 0 && (
+                <div className="numOfOrder">
+                  {store.getState().orders.length}
+                </div>
+              )}
+            </li>
           </ul>
         </div>
       </nav>

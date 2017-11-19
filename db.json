@@ -7,7 +7,7 @@
       "kapasitas": "7",
       "transmisi": "Automatic",
       "tahun": "2013",
-      "harga": "350.000",
+      "harga": "350000",
       "alamat": "Jalan Prawirotaman"
     },
     {
@@ -17,7 +17,7 @@
       "kapasitas": "7",
       "transmisi": "Automatic",
       "tahun": "2013",
-      "harga": "350.000",
+      "harga": "350000",
       "alamat": "Jalan Prawirotaman",
       "id": "haha"
     },
@@ -27,7 +27,7 @@
       "kapasitas": "5",
       "transmisi": "Manual",
       "tahun": "2010",
-      "harga": "100.000",
+      "harga": "100000",
       "alamat": "jalan jalan",
       "id": "196c3f31-97df-4805-89a4-b2a82a22c2e9"
     },
@@ -59,7 +59,7 @@
   "attractions": [
     {
       "nama": "Sindu Kusuma Edu Park",
-      "harga": "50.000",
+      "harga": "50000",
       "alamat": "Jalan Jalan",
       "deskripsi":
         "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
@@ -69,13 +69,29 @@
     },
     {
       "nama": "Jogja Bay Waterpark",
-      "harga": "80.000",
+      "harga": "80000",
       "alamat": "Jalan Condongcatur",
       "deskripsi":
         "Massive theme park in forested mountains with giant water slides, a pirate ship & other attractions.",
       "foto":
         "http://www.jogjabay.com/assets/images/home_gallery/small/576d010231ed1.jpg",
       "id": "c5bd7620-80b1-44a0-b381-ea3fa3838f5b"
+    },
+    {
+      "nama": "ehehe",
+      "harga": "hehe",
+      "alamat": "eheh",
+      "deskripsi": "eh",
+      "foto": "hehe",
+      "id": "2aedcfb9-dde5-470c-8c8d-2086773ca08f"
+    },
+    {
+      "nama": "yoo",
+      "harga": "yoo",
+      "alamat": "yoo",
+      "deskripsi": "yoo",
+      "foto": "yoo",
+      "id": "627d85ab-ab10-4685-81e0-04757f9e6b2f"
     }
   ]
 }

@@ -18,13 +18,14 @@ export const attractions = function(state = null, action) {
   }
 };
 
-export const orders = function(state = null, action) {
+export const orders = function(state = [], action) {
   console.log(action);
   switch (action.type) {
     case "CREATE_ORDER_CAR":
-      return { ...state, carOrder: action.payload };
+      // return [...state, action.payload];
+      return { ...state, car: action.payload };
     case "CREATE_ORDER_ATTRACTION":
-      return { ...state, attractionOrder: action.payload };
+      return { ...state, attraction: action.payload };
     default:
       return state;
   }
