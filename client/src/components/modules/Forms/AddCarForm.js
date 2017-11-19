@@ -21,7 +21,7 @@ export default class AddCarForm extends Component {
             </div>
             <div className="row">
               <div className="input-field col s6">
-                <label style={{ marginTop: "-30px" }}>Merk Mobil</label>
+                <label style={{ marginTop: "-30px" }}>Tahun</label>
                 <input type="text" />
               </div>
               <div className="input-field col s6">

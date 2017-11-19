@@ -6,6 +6,7 @@
       "merk": "Honda",
       "kapasitas": "5",
       "transmisi": "Automatic",
+      "tahun": "2015",
       "harga": "150.000",
       "alamat": "Jalan Kaliurang"
     },
@@ -15,6 +16,7 @@
       "merk": "Toyota",
       "kapasitas": "7",
       "transmisi": "Automatic",
+      "tahun": "2013",
       "harga": "350.000",
       "alamat": "Jalan Prawirotaman"
     }

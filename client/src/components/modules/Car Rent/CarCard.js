@@ -40,8 +40,7 @@ export default class CarCard extends Component {
                       <div className="row">
                         <div className="col s12">
                           <span className="category">Kapasitas &nbsp;: </span>
-                          {this.props.kapasitas}
-                          orang
+                          {this.props.kapasitas} &nbsp; orang
                         </div>
                       </div>
                     </li>
