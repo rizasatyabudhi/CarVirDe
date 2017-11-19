@@ -71,6 +71,7 @@ export function addAttraction(props) {
         "Content-Type": "application/json"
       },
       data: {
+        nama: props.nama,
         harga: props.harga,
         alamat: props.alamat,
         deskripsi: props.deskripsi,

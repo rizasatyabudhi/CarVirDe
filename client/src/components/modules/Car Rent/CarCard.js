@@ -8,7 +8,7 @@ export default class CarCard extends Component {
           <div className="card hoverable">
             <div className="card-image">
               <img
-                src={this.props.image}
+                src={this.props.foto}
                 style={{ width: "492.89px", height: "280px" }}
               />
               <span className="card-title">{`${this.props.merk} ${this.props
