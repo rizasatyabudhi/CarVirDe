@@ -1,6 +1,26 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addAttraction } from "../../../actions/actions";
 
-export default class AddAttractionForm extends Component {
+class AddAttractionForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nama: "",
+      harga: "",
+      alamat: "",
+      deskripsi: "",
+      foto: ""
+    };
+
+    this.onFormSubmit = this.onFormSubmit.bind(this);
+  }
+  onFormSubmit(e) {
+    e.preventDefault();
+    this.props.addAttraction(this.state).then(() => {
+      alert("SUCCESS");
+    });
+  }
   render() {
     return (
       <div className="row ">
@@ -11,28 +31,45 @@ export default class AddAttractionForm extends Component {
             </div>
             <div className="row">
               <div className="input-field col s12">
+                <label style={{ marginTop: "-30px" }}>Nama Tempat Wisata</label>
+                <input
+                  type="text"
+                  onChange={e => this.setState({ nama: e.target.value })}
+                />
+              </div>
+              <div className="input-field col s12">
                 <label style={{ marginTop: "-30px" }}>Alamat</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  onChange={e => this.setState({ alamat: e.target.value })}
+                />
               </div>
               <div className="input-field col s12">
                 <label style={{ marginTop: "-30px" }}>Harga /pax</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  onChange={e => this.setState({ harga: e.target.value })}
+                />
               </div>
               <div className="input-field col s12">
                 <label style={{ marginTop: "-30px" }}>Deskripsi Tempat</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  onChange={e => this.setState({ deskripsi: e.target.value })}
+                />
+              </div>
+              <div className="input-field col s12">
+                <label style={{ marginTop: "-30px" }}>Upload Foto Tempat</label>
+                <input
+                  type="text"
+                  onChange={e => this.setState({ foto: e.target.value })}
+                />
               </div>
             </div>
-            <div class="file-field input-field">
-              <div class="btn">
-                <span>Upload Foto Tempat Wisata</span>
-                <input type="file" />
-              </div>
-              <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" />
-              </div>
-            </div>
-            <button className="btn deep-purple darken-3 waves-effect waves-light">
+            <button
+              className="btn deep-purple darken-3 waves-effect waves-light"
+              onClick={this.onFormSubmit}
+            >
               Submit <i class="material-icons right">send</i>
             </button>
           </div>
@@ -41,3 +78,8 @@ export default class AddAttractionForm extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { state };
+}
+export default connect(mapStateToProps, { addAttraction })(AddAttractionForm);

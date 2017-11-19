@@ -58,14 +58,14 @@
   ],
   "attractions": [
     {
-      "name": "Jogja Bay Waterpark",
-      "lokasi": "Depok",
-      "harga": "50.000"
-    },
-    {
       "name": "Sindu Kusuma Edu Park",
-      "lokasi": "Condongcatur",
-      "harga": "100.000"
+      "harga": "50000",
+      "alamat": "Jalan Jalan",
+      "deskripsi":
+        "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
+      "foto":
+        "https://eksotisjogja.com/wp-content/uploads/2016/08/Sepeda-Mabur-Sindu-Kusuma-Edupark-mjrrydh8h44xnx56iibs1id4hwrxwa3fcn8su46ep8.jpg",
+      "id": "f6905001-134f-42c2-a7df-56b613389424"
     }
   ]
 }

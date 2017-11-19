@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addCar } from "../../../actions/actions";
-import { Field, reduxForm, initialize } from "redux-form";
 
 class AddCarForm extends Component {
   constructor(props) {
