@@ -27,7 +27,7 @@
       "kapasitas": "5",
       "transmisi": "Manual",
       "tahun": "2010",
-      "harga": "100000",
+      "harga": "100.000",
       "alamat": "jalan jalan",
       "id": "196c3f31-97df-4805-89a4-b2a82a22c2e9"
     },
@@ -39,7 +39,8 @@
       "tahun": "YEYEY",
       "harga": "EYYE",
       "alamat": "YEYYEE",
-      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
+      "foto":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
       "id": "509ba72c-3089-4c41-b895-6c6cdd9c4298"
     },
     {
@@ -50,25 +51,30 @@
       "tahun": "AHAH",
       "harga": "HAHA",
       "alamat": "AHHA",
-      "foto": "http://st.motortrend.com/uploads/sites/10/2016/11/2017-Honda-Civic-Hatchback-Sport-Touring-front-three-quarter-in-motion-10-1.jpg",
+      "foto":
+        "http://st.motortrend.com/uploads/sites/10/2016/11/2017-Honda-Civic-Hatchback-Sport-Touring-front-three-quarter-in-motion-10-1.jpg",
       "id": "b8954e83-a7e3-4df1-8a35-13ad29aa7b45"
     }
   ],
   "attractions": [
     {
       "nama": "Sindu Kusuma Edu Park",
-      "harga": "50000",
+      "harga": "50.000",
       "alamat": "Jalan Jalan",
-      "deskripsi": "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
-      "foto": "https://eksotisjogja.com/wp-content/uploads/2016/08/Sepeda-Mabur-Sindu-Kusuma-Edupark-mjrrydh8h44xnx56iibs1id4hwrxwa3fcn8su46ep8.jpg",
+      "deskripsi":
+        "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
+      "foto":
+        "https://eksotisjogja.com/wp-content/uploads/2016/08/Sepeda-Mabur-Sindu-Kusuma-Edupark-mjrrydh8h44xnx56iibs1id4hwrxwa3fcn8su46ep8.jpg",
       "id": "f6905001-134f-42c2-a7df-56b613389424"
     },
     {
       "nama": "Jogja Bay Waterpark",
       "harga": "80.000",
       "alamat": "Jalan Condongcatur",
-      "deskripsi": "Massive theme park in forested mountains with giant water slides, a pirate ship & other attractions.",
-      "foto": "http://www.jogjabay.com/assets/images/home_gallery/small/576d010231ed1.jpg",
+      "deskripsi":
+        "Massive theme park in forested mountains with giant water slides, a pirate ship & other attractions.",
+      "foto":
+        "http://www.jogjabay.com/assets/images/home_gallery/small/576d010231ed1.jpg",
       "id": "c5bd7620-80b1-44a0-b381-ea3fa3838f5b"
     }
   ]

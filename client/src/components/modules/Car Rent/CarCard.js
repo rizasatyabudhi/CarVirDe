@@ -13,7 +13,10 @@ export default class CarCard extends Component {
               />
               <span className="card-title">{`${this.props.merk} ${this.props
                 .tipe}`}</span>
-              <a className="btn-floating halfway-fab waves-effect waves-light purple z-depth-4">
+              <a
+                className="btn-floating halfway-fab waves-effect waves-light purple z-depth-4"
+                onClick={this.props.onClick}
+              >
                 <i className="material-icons">add_shopping_cart</i>
               </a>
             </div>

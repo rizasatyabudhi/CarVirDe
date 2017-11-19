@@ -28,7 +28,9 @@ export default class AttractionCard extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col s9 paragraph">{this.props.deskripsi}</div>
+                <div className="col s9 paragraph" style={{ marginTop: "23px" }}>
+                  {this.props.deskripsi}
+                </div>
               </div>
             </div>
 
@@ -37,6 +39,7 @@ export default class AttractionCard extends Component {
                 class="btn waves-effect waves-light"
                 type="submit"
                 name="action"
+                onClick={this.props.onClick}
               >
                 Add to Cart
                 <i class="material-icons right">add_shopping_cart</i>

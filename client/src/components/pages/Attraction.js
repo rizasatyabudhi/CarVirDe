@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AttractionCard from "../modules/Attraction/AttractionCard";
-import { fetchAttractions } from "../../actions/actions";
+import { fetchAttractions, addOrderAttraction } from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
 
@@ -23,6 +23,10 @@ class Attraction extends Component {
                   harga={attraction.harga}
                   deskripsi={attraction.deskripsi}
                   foto={attraction.foto}
+                  onClick={e => {
+                    e.preventDefault();
+                    this.props.addOrderAttraction(attraction);
+                  }}
                 />
               );
             })
@@ -38,4 +42,7 @@ class Attraction extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { fetchAttractions })(Attraction);
+export default connect(mapStateToProps, {
+  fetchAttractions,
+  addOrderAttraction
+})(Attraction);

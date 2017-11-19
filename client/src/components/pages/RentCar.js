@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import CarCard from "../modules/Car Rent/CarCard";
-import { fetchCars, fetchAttractions } from "../../actions/actions";
+import {
+  fetchCars,
+  fetchAttractions,
+  addOrderCar
+} from "../../actions/actions";
 import { store } from "../../index";
 
 class RentCar extends Component {
@@ -27,6 +31,10 @@ class RentCar extends Component {
                   kapasitas={car.kapasitas}
                   harga={car.harga}
                   alamat={car.alamat}
+                  onClick={e => {
+                    e.preventDefault();
+                    this.props.addOrderCar(car);
+                  }}
                 />
               );
             })
@@ -42,6 +50,8 @@ class RentCar extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { fetchCars, fetchAttractions })(
-  RentCar
-);
+export default connect(mapStateToProps, {
+  fetchCars,
+  fetchAttractions,
+  addOrderCar
+})(RentCar);

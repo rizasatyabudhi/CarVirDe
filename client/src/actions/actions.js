@@ -81,3 +81,21 @@ export function addAttraction(props) {
     }).then(() => console.log("success submit"));
   };
 }
+
+export function addOrderCar(props) {
+  return function(dispatch) {
+    store.dispatch({
+      type: "CREATE_ORDER_CAR",
+      payload: props
+    });
+  };
+}
+
+export function addOrderAttraction(props) {
+  return function(dispatch) {
+    store.dispatch({
+      type: "CREATE_ORDER_ATTRACTION",
+      payload: props
+    });
+  };
+}
