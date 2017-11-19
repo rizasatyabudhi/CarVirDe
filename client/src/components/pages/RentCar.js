@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import CarCard from "../modules/Car Rent/CarCard";
-export default class RentCar extends Component {
+import { fetchCars } from "../../actions/actions";
+
+class RentCar extends Component {
+  componentWillMount() {
+    this.props.fetchCars();
+  }
   render() {
     return (
       <div className="container">
@@ -58,3 +64,8 @@ export default class RentCar extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { state };
+}
+export default connect(mapStateToProps, { fetchCars })(RentCar);

@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "judul": "Honda Jazz",
+      "tipe": "Jazz",
+      "merk": "Honda",
+      "kapasitas": "5",
+      "transmisi": "Automatic",
+      "harga": "150.000",
+      "alamat": "Jalan Kaliurang"
+    },
+    {
+      "judul": "Toyota Fortuner",
+      "tipe": "Fortuner",
+      "merk": "Toyota",
+      "kapasitas": "7",
+      "transmisi": "Automatic",
+      "harga": "350.000",
+      "alamat": "Jalan Prawirotaman"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "description": "Apple"
+    },
+    {
+      "id": "2",
+      "name": "Google",
+      "description": "Search"
+    }
+  ]
+}

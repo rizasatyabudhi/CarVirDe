@@ -1,7 +1,7 @@
-export const auth = function(state = {}, action) {
+export const cars = function(state = null, action) {
   console.log(action);
   switch (action.type) {
-    case "API":
+    case "FETCH_CARS":
       return action.payload;
     default:
       return state;
