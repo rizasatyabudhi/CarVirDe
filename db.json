@@ -19,6 +19,58 @@
       "tahun": "2013",
       "harga": "350.000",
       "alamat": "Jalan Prawirotaman"
+    },
+    {
+      "judul": "Toyota Fortuner",
+      "tipe": "Fortuner",
+      "merk": "Toyota",
+      "kapasitas": "7",
+      "transmisi": "Automatic",
+      "tahun": "2013",
+      "harga": "350.000",
+      "alamat": "Jalan Prawirotaman"
+    },
+    {
+      "judul": "Toyota HAHAHHA",
+      "tipe": "Fortuner",
+      "merk": "Toyota",
+      "kapasitas": "7",
+      "transmisi": "Automatic",
+      "tahun": "2013",
+      "harga": "350.000",
+      "alamat": "Jalan Prawirotaman",
+      "id": "haha"
+    },
+    {
+      "tipe": "fewfw",
+      "merk": "few",
+      "kapasitas": "fewok",
+      "transmisi": "fewo",
+      "tahun": "fewoj",
+      "harga": "fewko",
+      "alamat": "fewfw",
+      "id": "f2c6b011-3eee-4819-9f8e-d37ebfeda5ac"
+    },
+    {
+      "tipe": "Avanza",
+      "merk": "Toyota",
+      "kapasitas": "5",
+      "transmisi": "Manual",
+      "tahun": "2010",
+      "harga": "100000",
+      "alamat": "jalan jalan",
+      "id": "196c3f31-97df-4805-89a4-b2a82a22c2e9"
+    },
+    {
+      "tipe": "YEEAH BOII",
+      "merk": "YEAA BOII",
+      "kapasitas": "EYYE",
+      "transmisi": "EYYE",
+      "tahun": "YEYEY",
+      "harga": "EYYE",
+      "alamat": "YEYYEE",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
+      "id": "509ba72c-3089-4c41-b895-6c6cdd9c4298"
     }
   ],
   "attractions": [

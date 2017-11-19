@@ -9,9 +9,10 @@ export default class CarCard extends Component {
             <div className="card-image">
               <img
                 src={this.props.image}
-                style={{ width: "460.89px", height: "280px" }}
+                style={{ width: "492.89px", height: "280px" }}
               />
-              <span className="card-title">{this.props.title}</span>
+              <span className="card-title">{`${this.props.merk} ${this.props
+                .tipe}`}</span>
               <a className="btn-floating halfway-fab waves-effect waves-light purple z-depth-4">
                 <i className="material-icons">add_shopping_cart</i>
               </a>

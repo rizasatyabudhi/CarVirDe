@@ -19,7 +19,9 @@
     "react-tabs": "^2.1.0",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0"
+    "redux-form": "^7.1.2",
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

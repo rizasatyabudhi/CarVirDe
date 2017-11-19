@@ -18,10 +18,10 @@ class RentCar extends Component {
             cars.map((car, index) => {
               return (
                 <CarCard
-                  image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg"
-                  title={car.judul}
+                  // image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg"
+                  image={car.foto}
                   tipe={car.tipe}
-                  merk={car.merek}
+                  merk={car.merk}
                   transmisi={car.transmisi}
                   tahun={car.tahun}
                   kapasitas={car.kapasitas}
