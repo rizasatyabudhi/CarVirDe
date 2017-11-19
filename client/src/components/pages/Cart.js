@@ -8,11 +8,16 @@ class Cart extends Component {
   render() {
     const { attraction = "", car = "" } = store.getState().orders;
     function calculateTotal() {
-      return parseInt(attraction.harga) + parseInt(car.harga);
+      return attraction
+        ? parseInt(attraction.harga) + parseInt(car.harga)
+        : 0 + parseInt(car.harga);
     }
     console.log(calculateTotal());
 
     console.log(calculateTotal, "HARGA GW");
+    if (!car) {
+      return <h4 style={{ height: "100vh" }}>Belanja dulu gan</h4>;
+    }
     return (
       <div className="container">
         <h4>Your Orders</h4>
@@ -24,11 +29,13 @@ class Cart extends Component {
             transmisi={car.transmisi}
             harga={car.harga}
           />
-          <AttractionCart
-            nama={attraction.nama}
-            alamat={attraction.alamat}
-            harga={attraction.harga}
-          />
+          {attraction && (
+            <AttractionCart
+              nama={attraction.nama}
+              alamat={attraction.alamat}
+              harga={attraction.harga}
+            />
+          )}
           <TotalPriceCart total={calculateTotal()} />
         </div>
       </div>

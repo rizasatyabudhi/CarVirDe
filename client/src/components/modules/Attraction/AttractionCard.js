@@ -8,7 +8,7 @@ export default class AttractionCard extends Component {
           <div class="card-image large">
             <img
               src={this.props.foto}
-              style={{ width: "200px", height: "217px" }}
+              style={{ width: "230px", height: "217px" }}
             />
           </div>
           <div class="card-stacked">
@@ -22,9 +22,12 @@ export default class AttractionCard extends Component {
                       {this.props.alamat}
                     </li>
                     <li>
-                      <i className="material-icons">attach_money</i> Rp
-                      {this.props.harga}
-                      /Pax
+                      <i className="material-icons">attach_money</i>
+                      <span>
+                        Rp
+                        {this.props.harga}
+                        /Pax
+                      </span>
                     </li>
                   </ul>
                 </div>
