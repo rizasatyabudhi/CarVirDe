@@ -28,22 +28,7 @@ export default class componentName extends Component {
           </div>
         </header>
 
-        <section class="sections section-a">
-          <div class="container">
-            <p>
-              {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-              impedit amet minima iste autem cumque et maiores blanditiis
-              doloribus aut dolorum quaerat non est voluptatum, tempore ut
-              dolorem voluptas quod quae accusantium, ex inventore ducimus.
-              Beatae mollitia exercitationem, quam similique, consectetur
-              ratione reprehenderit delectus neque eligendi facere soluta dolor
-              ducimus!
-            </p>
-          </div>
-        </section>
-
-        <section class="section section-b">
+        <section class="section section-a">
           <div class="container">
             <div className="row">
               <div className="col s3 center-align">

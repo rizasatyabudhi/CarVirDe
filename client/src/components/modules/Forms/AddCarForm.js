@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addCar } from "../../../actions/actions";
+import Alert from "react-s-alert";
 
 class AddCarForm extends Component {
   constructor(props) {
@@ -21,7 +22,12 @@ class AddCarForm extends Component {
   onFormSubmit(e) {
     e.preventDefault();
     this.props.addCar(this.state).then(() => {
-      alert("SUCCESS");
+      Alert.success("Berhasil Tambah Mobil", {
+        position: "bottom-right",
+        effect: "jelly",
+        beep: false,
+        timeout: 2000
+      });
     });
   }
 

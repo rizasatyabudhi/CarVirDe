@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addAttraction } from "../../../actions/actions";
+import Alert from "react-s-alert";
 
 class AddAttractionForm extends Component {
   constructor(props) {
@@ -18,7 +19,12 @@ class AddAttractionForm extends Component {
   onFormSubmit(e) {
     e.preventDefault();
     this.props.addAttraction(this.state).then(() => {
-      alert("SUCCESS");
+      Alert.success("Berhasil Tambah Tempat Wisata", {
+        position: "bottom-right",
+        effect: "jelly",
+        beep: false,
+        timeout: 2000
+      });
     });
   }
   render() {
