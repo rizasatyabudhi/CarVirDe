@@ -5,14 +5,14 @@ export default class AttractionPackageCard extends Component {
     return (
       <div>
         <div class="col s4">
-          <div class="card horizontal">
+          <div class="card horizontal z-depth-3">
             <div class="card-stacked">
               <div class="card-content">
                 <div className="col s12">
                   <p style={{ fontWeight: "800" }}>{this.props.nama}</p>
                 </div>
                 <div className="row">
-                  <div className="col s5">
+                  <div className="col s12">
                     <ul>
                       <li>
                         <i className="material-icons">location_on</i>
@@ -21,7 +21,7 @@ export default class AttractionPackageCard extends Component {
                       <li>
                         <i className="material-icons">attach_money</i>
                         <span>
-                          Rp
+                          Rp &nbsp;
                           {this.props.harga}
                           /Pax
                         </span>

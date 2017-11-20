@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AttractionPackageCard from "../modules/Attraction/AttractionPackageCard";
 
 export class CarCart extends Component {
   render() {
@@ -102,6 +103,123 @@ export class AttractionCart extends Component {
             </div>
             <div className="col s2">
               <h5>Rp {this.props.harga}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export class AttractionPackageCart extends Component {
+  render() {
+    return (
+      <div class="col s12">
+        <div class="card-panel hoverable" style={{ height: "300px" }}>
+          <h5>Travel Package Order</h5>
+          <div class="col s4">
+            <div class="card horizontal z-depth-3">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <div className="col s12">
+                    <p style={{ fontWeight: "800" }}>{this.props.nama0}</p>
+                  </div>
+                  <div className="row">
+                    <div className="col s12">
+                      <ul>
+                        <li>
+                          <i className="material-icons">location_on</i>
+                          {this.props.alamat0}
+                        </li>
+                        <li>
+                          <i className="material-icons">attach_money</i>
+                          <span>
+                            Rp &nbsp;
+                            {this.props.harga0}
+                            /Pax
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      className="col s12 paragraph"
+                      style={{ marginTop: "23px" }}
+                    >
+                      {this.props.deskripsi0}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal z-depth-3">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <div className="col s12">
+                    <p style={{ fontWeight: "800" }}>{this.props.nama1}</p>
+                  </div>
+                  <div className="row">
+                    <div className="col s12">
+                      <ul>
+                        <li>
+                          <i className="material-icons">location_on</i>
+                          {this.props.alamat1}
+                        </li>
+                        <li>
+                          <i className="material-icons">attach_money</i>
+                          <span>
+                            Rp &nbsp;
+                            {this.props.harga1}
+                            /Pax
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      className="col s12 paragraph"
+                      style={{ marginTop: "23px" }}
+                    >
+                      {this.props.deskripsi1}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card horizontal z-depth-3">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <div className="col s12">
+                    <p style={{ fontWeight: "800" }}>{this.props.nama2}</p>
+                  </div>
+                  <div className="row">
+                    <div className="col s12">
+                      <ul>
+                        <li>
+                          <i className="material-icons">location_on</i>
+                          {this.props.alamat2}
+                        </li>
+                        <li>
+                          <i className="material-icons">attach_money</i>
+                          <span>
+                            Rp &nbsp;
+                            {this.props.harga2}
+                            /Pax
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      className="col s12 paragraph"
+                      style={{ marginTop: "23px" }}
+                    >
+                      {this.props.deskripsi2}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
