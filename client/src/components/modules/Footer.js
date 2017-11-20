@@ -17,11 +17,11 @@ export default class Footer extends Component {
                   style={{
                     display: "inline-block",
                     marginLeft: "20px",
-                    fontSize: "20px"
+                    fontSize: "15px"
                   }}
                   class="white-text"
                 >
-                  087877643416
+                  021-7574829
                 </h5>
                 <ul>
                   {/*  <li>
@@ -47,13 +47,30 @@ export default class Footer extends Component {
                   */}
                 </ul>
               </div>
+              <div class="col l4 offset-l2 s12">
+                <i className="material-icons">email</i>
+                <h5
+                  style={{
+                    display: "inline-block",
+                    marginLeft: "20px",
+                    fontSize: "15px"
+                  }}
+                  class="white-text"
+                >
+                  contact-support@carvirde.com
+                </h5>
+                <ul />
+              </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
               © 2017 CarVirde
-              <a class="grey-text text-lighten-4 right" href="#!">
-                More Links
+              <a
+                class="grey-text text-lighten-4 right"
+                href="https://github.com/rizasatyabudhi/CarVirDe"
+              >
+                https://github.com/rizasatyabudhi/CarVirDe
               </a>
             </div>
           </div>

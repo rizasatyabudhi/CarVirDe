@@ -45,7 +45,7 @@ class Cart extends Component {
     if (!car) {
       return (
         <h4 style={{ height: "100vh" }} className="center align">
-          Belanja dulu gan
+          Anda Belum Menambah Item ke Keranjang
         </h4>
       );
     }

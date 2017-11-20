@@ -7,7 +7,7 @@ export default class CarOwnerForm extends Component {
         <form className="col s12 center-align">
           <div className="card-panel z-depth-2" style={{ marginTop: "3em" }}>
             <div className="col s12">
-              <h2>Car Owner</h2>
+              <h2>Pemilik Rental</h2>
             </div>
             <div className="row">
               <div className="input-field col s6">
