@@ -30,6 +30,9 @@ class Header extends Component {
               <Link to={"attraction"}>Attraction</Link>
             </li>
             <li>
+              <Link to={"attractionPackage"}>Attraction Package</Link>
+            </li>
+            <li>
               <Link to={"addAttraction"}>Add Attraction</Link>
             </li>
             <li>

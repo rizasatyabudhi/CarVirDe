@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import Register from "./pages/Register";
 import RentCar from "./pages/RentCar";
 import Attraction from "./pages/Attraction";
+import AttractionPackage from "./pages/AttractionPackage";
 import Cart from "./pages/Cart";
 import AddCar from "./pages/AddCar";
 import addAttraction from "./pages/AddAttraction";
@@ -27,6 +28,11 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/rentCar" component={RentCar} />
             <Route exact path="/attraction" component={Attraction} />
+            <Route
+              exact
+              path="/attractionPackage"
+              component={AttractionPackage}
+            />
             <Route exact path="/addCar" component={AddCar} />
             <Route exact path="/addAttraction" component={AddAttraction} />
             <Route exact path="/cart" component={Cart} />
