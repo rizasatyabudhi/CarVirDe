@@ -8,7 +8,8 @@
       "tahun": "2015",
       "harga": "150000",
       "alamat": "Jalan Kaliurang",
-      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
+      "foto":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg",
       "id": "509ba72c-3089-4c41-b895-6c6cdd9c4298"
     },
     {
@@ -19,19 +20,9 @@
       "tahun": "2016",
       "harga": "250000",
       "alamat": "Jalan Imogiri",
-      "foto": "http://st.motortrend.com/uploads/sites/10/2016/11/2017-Honda-Civic-Hatchback-Sport-Touring-front-three-quarter-in-motion-10-1.jpg",
+      "foto":
+        "http://st.motortrend.com/uploads/sites/10/2016/11/2017-Honda-Civic-Hatchback-Sport-Touring-front-three-quarter-in-motion-10-1.jpg",
       "id": "b8954e83-a7e3-4df1-8a35-13ad29aa7b45"
-    },
-    {
-      "tipe": "oajo",
-      "merk": "jefowjo",
-      "kapasitas": "jfoewjfoj",
-      "transmisi": "fjeowjo",
-      "tahun": "fejqojf",
-      "harga": "ofejwojfo",
-      "alamat": "jfoewjo",
-      "foto": "fewlm",
-      "id": "23259157-e144-4650-9296-3047c514c693"
     }
   ],
   "attractions": [
@@ -39,32 +30,40 @@
       "nama": "Sindu Kusuma Edu Park",
       "harga": "50000",
       "alamat": "Jalan Jalan",
-      "deskripsi": "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
-      "foto": "https://eksotisjogja.com/wp-content/uploads/2016/08/Sepeda-Mabur-Sindu-Kusuma-Edupark-mjrrydh8h44xnx56iibs1id4hwrxwa3fcn8su46ep8.jpg",
+      "deskripsi":
+        "Theme park with rides for kids & adults, including a large observation wheel, ziplines & Segways.",
+      "foto":
+        "https://eksotisjogja.com/wp-content/uploads/2016/08/Sepeda-Mabur-Sindu-Kusuma-Edupark-mjrrydh8h44xnx56iibs1id4hwrxwa3fcn8su46ep8.jpg",
       "id": "f6905001-134f-42c2-a7df-56b613389424"
     },
     {
       "nama": "Jogja Bay Waterpark",
       "harga": "80000",
       "alamat": "Jalan Condongcatur",
-      "deskripsi": "Massive theme park in forested mountains with giant water slides, a pirate ship & other attractions.",
-      "foto": "http://www.jogjabay.com/assets/images/home_gallery/small/576d010231ed1.jpg",
+      "deskripsi":
+        "Massive theme park in forested mountains with giant water slides, a pirate ship & other attractions.",
+      "foto":
+        "http://www.jogjabay.com/assets/images/home_gallery/small/576d010231ed1.jpg",
       "id": "c5bd7620-80b1-44a0-b381-ea3fa3838f5b"
     },
     {
       "nama": "Taman Sari",
       "harga": "50000",
       "alamat": "Komplek Wisata Taman Sari",
-      "deskripsi": "Taman Sari Water Castle, also known as Taman Sari, is the site of a former royal garden of the Sultanate of Yogyakarta.",
-      "foto": "http://spotunik.com/assets/images/spots/taman-sari-20160815154637.jpeg",
+      "deskripsi":
+        "Taman Sari Water Castle, also known as Taman Sari, is the site of a former royal garden of the Sultanate of Yogyakarta.",
+      "foto":
+        "http://spotunik.com/assets/images/spots/taman-sari-20160815154637.jpeg",
       "id": "ed42bc79-abd8-47d5-bc4e-4ef664c8676b"
     },
     {
       "nama": "Keraton Jogja",
       "harga": "10000",
       "alamat": "Jalan Rotowijayan Blok No. 1",
-      "deskripsi": "Kraton of Yogyakarta is a royal palace complex located in the city of Yogyakarta, Yogyakarta Special Region, Indonesia. ",
-      "foto": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kraton_Yogyakarta_Pagelaran.jpg",
+      "deskripsi":
+        "Kraton of Yogyakarta is a royal palace complex located in the city of Yogyakarta, Yogyakarta Special Region, Indonesia. ",
+      "foto":
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Kraton_Yogyakarta_Pagelaran.jpg",
       "id": "37979c17-a0bf-4c18-bc56-818994134cd3"
     }
   ]
