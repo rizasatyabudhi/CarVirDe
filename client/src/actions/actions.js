@@ -99,3 +99,12 @@ export function addOrderAttraction(props) {
     });
   };
 }
+
+export function addOrderAttractionPackage(props) {
+  return function(dispatch) {
+    store.dispatch({
+      type: "CREATE_ORDER_ATTRACTION_PACKAGE",
+      payload: props
+    });
+  };
+}

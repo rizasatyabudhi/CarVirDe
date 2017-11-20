@@ -26,6 +26,8 @@ export const orders = function(state = [], action) {
       return { ...state, car: action.payload };
     case "CREATE_ORDER_ATTRACTION":
       return { ...state, attraction: action.payload };
+    case "CREATE_ORDER_ATTRACTION_PACKAGE":
+      return { ...state, attractionPackage: action.payload };
     default:
       return state;
   }

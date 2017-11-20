@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AttractionPackageCard from "../modules/Attraction/AttractionPackageCard";
-import { fetchAttractions, addOrderAttraction } from "../../actions/actions";
+import { addOrderAttractionPackage } from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
 
@@ -65,7 +65,7 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                console.log(Package1, "ORDERKUU");
+                this.props.addOrderAttractionPackage(Package1);
               }}
             >
               Add to Cart
@@ -91,7 +91,10 @@ class AttractionPackage extends Component {
               class="btn waves-effect waves-light"
               type="submit"
               name="action"
-              // onClick={this.onClick}
+              onClick={e => {
+                e.preventDefault();
+                this.props.addOrderAttractionPackage(Package2);
+              }}
             >
               Add to Cart
               <i class="material-icons right">add_shopping_cart</i>
@@ -117,6 +120,5 @@ function mapStateToProps(state) {
   return { state };
 }
 export default connect(mapStateToProps, {
-  fetchAttractions,
-  addOrderAttraction
+  addOrderAttractionPackage
 })(AttractionPackage);
