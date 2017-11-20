@@ -55,7 +55,7 @@ class AttractionPackage extends Component {
     if (orders.attraction) {
       return (
         <div className="center align">
-          <h4 style={{ height: "100vh" }}>Gakboleh</h4>
+          <h4 style={{ height: "100vh" }}>Anda Sudah Memilih Untuk Tidak Menggunakan Paket</h4>
         </div>
       );
     }
