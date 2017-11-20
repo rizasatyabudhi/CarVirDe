@@ -29,15 +29,6 @@ class Cart extends Component {
         : 0 + parseInt(car.harga);
     }
 
-    // function calculatePackage() {
-    //   return (
-    //     parseInt(attractionPackage[0].harga) +
-    //     parseInt(attractionPackage[1].harga) +
-    //     parseInt(attractionPackage[2].harga)
-    //   );
-    // }
-    // console.log(calculatePackage(), "BAYAR JING");
-
     if (!car) {
       return <h4 style={{ height: "100vh" }}>Belanja dulu gan</h4>;
     }

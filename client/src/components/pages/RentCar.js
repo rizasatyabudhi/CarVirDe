@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import CarCard from "../modules/Car Rent/CarCard";
+import Alert from "react-s-alert";
 import {
   fetchCars,
   fetchAttractions,
@@ -31,8 +32,19 @@ class RentCar extends Component {
                   kapasitas={car.kapasitas}
                   harga={car.harga}
                   alamat={car.alamat}
+                  // onClick={e => {
+                  //   e.preventDefault();
+                  //   this.props.addOrderCar(car);
+                  // }}
                   onClick={e => {
                     e.preventDefault();
+                    Alert.success("Added to Cart", {
+                      position: "bottom-right",
+                      effect: "jelly",
+                      beep: false,
+                      timeout: 1000
+                      // offset: 100
+                    });
                     this.props.addOrderCar(car);
                   }}
                 />

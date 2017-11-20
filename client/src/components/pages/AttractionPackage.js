@@ -8,6 +8,7 @@ class AttractionPackage extends Component {
   componentDidMount() {}
 
   render() {
+    const { orders } = store.getState();
     const Package1 = [
       {
         nama: "Burjo",
@@ -51,10 +52,6 @@ class AttractionPackage extends Component {
       }
     ];
 
-    const coba = Package1.map(value => {
-      return value.nama;
-    });
-    console.log(coba);
     return (
       <div className="container">
         <div className="row">
@@ -67,7 +64,9 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                this.props.addOrderAttractionPackage(Package1);
+                !orders.attraction
+                  ? this.props.addOrderAttractionPackage(Package1)
+                  : alert("You have selected manual tour");
               }}
             >
               Add to Cart

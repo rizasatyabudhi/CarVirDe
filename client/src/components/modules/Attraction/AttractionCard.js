@@ -15,7 +15,7 @@ export default class AttractionCard extends Component {
             <div class="card-content">
               <h5 style={{ marginBottom: "20px" }}>{this.props.nama}</h5>
               <div className="row">
-                <div className="col s3">
+                <div className="col s4">
                   <ul>
                     <li>
                       <i className="material-icons">location_on</i>
@@ -31,7 +31,7 @@ export default class AttractionCard extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col s9 paragraph" style={{ marginTop: "23px" }}>
+                <div className="col s8 paragraph" style={{ marginTop: "23px" }}>
                   {this.props.deskripsi}
                 </div>
               </div>

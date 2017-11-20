@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
+import Alert from "react-s-alert";
 
 import "../style/App.css";
 import "../style/_RentCar.css";
+import "react-s-alert/dist/s-alert-default.css";
+import "react-s-alert/dist/s-alert-css-effects/slide.css";
+import "react-s-alert/dist/s-alert-css-effects/scale.css";
+import "react-s-alert/dist/s-alert-css-effects/bouncyflip.css";
+import "react-s-alert/dist/s-alert-css-effects/flip.css";
+import "react-s-alert/dist/s-alert-css-effects/genie.css";
+import "react-s-alert/dist/s-alert-css-effects/jelly.css";
+import "react-s-alert/dist/s-alert-css-effects/stackslide.css";
 
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
@@ -37,6 +46,7 @@ class App extends Component {
             <Route exact path="/addAttraction" component={AddAttraction} />
             <Route exact path="/cart" component={Cart} />
             <Footer />
+            <Alert stack={{ limit: 3 }} />
           </div>
         </BrowserRouter>
       </div>

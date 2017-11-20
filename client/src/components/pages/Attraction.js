@@ -10,7 +10,7 @@ class Attraction extends Component {
   }
 
   render() {
-    const { attractions } = store.getState();
+    const { attractions, orders } = store.getState();
     return (
       <div className="container">
         <div className="row">
@@ -25,7 +25,9 @@ class Attraction extends Component {
                   foto={attraction.foto}
                   onClick={e => {
                     e.preventDefault();
-                    this.props.addOrderAttraction(attraction);
+                    !orders.attractionPackage
+                      ? this.props.addOrderAttraction(attraction)
+                      : alert("You have selected with travel package");
                   }}
                 />
               );
