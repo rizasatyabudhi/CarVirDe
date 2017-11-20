@@ -30,7 +30,11 @@ class Cart extends Component {
     }
 
     if (!car) {
-      return <h4 style={{ height: "100vh" }}>Belanja dulu gan</h4>;
+      return (
+        <h4 style={{ height: "100vh" }} className="center align">
+          Belanja dulu gan
+        </h4>
+      );
     }
 
     // const coba = attractionPackage.map((value, index) => {

@@ -3,6 +3,7 @@ import AttractionPackageCard from "../modules/Attraction/AttractionPackageCard";
 import { addOrderAttractionPackage } from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
+import Alert from "react-s-alert";
 
 class AttractionPackage extends Component {
   componentDidMount() {}
@@ -51,7 +52,13 @@ class AttractionPackage extends Component {
         deskripsi: "hehe"
       }
     ];
-
+    if (orders.attraction) {
+      return (
+        <div className="center align">
+          <h4 style={{ height: "100vh" }}>Gakboleh</h4>
+        </div>
+      );
+    }
     return (
       <div className="container">
         <div className="row">
@@ -64,9 +71,15 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                !orders.attraction
-                  ? this.props.addOrderAttractionPackage(Package1)
-                  : alert("You have selected manual tour");
+                Alert.success("Added to Cart", {
+                  position: "bottom-right",
+                  effect: "jelly",
+                  beep: false,
+                  timeout: 2000,
+                  onShow: () => {
+                    this.props.addOrderAttractionPackage(Package1);
+                  }
+                });
               }}
             >
               Add to Cart
@@ -94,7 +107,15 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                this.props.addOrderAttractionPackage(Package2);
+                Alert.success("Added to Cart", {
+                  position: "bottom-right",
+                  effect: "jelly",
+                  beep: false,
+                  timeout: 2000,
+                  onShow: () => {
+                    this.props.addOrderAttractionPackage(Package2);
+                  }
+                });
               }}
             >
               Add to Cart

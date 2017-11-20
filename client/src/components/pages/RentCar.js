@@ -42,7 +42,7 @@ class RentCar extends Component {
                       position: "bottom-right",
                       effect: "jelly",
                       beep: false,
-                      timeout: 1000
+                      timeout: 2000
                       // offset: 100
                     });
                     this.props.addOrderCar(car);
