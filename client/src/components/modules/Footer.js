@@ -70,7 +70,7 @@ export default class Footer extends Component {
                 class="grey-text text-lighten-4 right"
                 href="https://github.com/rizasatyabudhi/CarVirDe"
               >
-                https://github.com/rizasatyabudhi/CarVirDe
+                www.carvirde.com
               </a>
             </div>
           </div>

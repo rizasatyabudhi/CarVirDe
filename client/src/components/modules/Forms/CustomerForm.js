@@ -39,6 +39,17 @@ export default class CustomerForm extends Component {
                 <input type="text" />
               </div>
             </div>
+            <div className="row">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>Upload Foto KTP</span>
+                  <input type="file" />
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" />
+                </div>
+              </div>
+            </div>
             <button className="btn deep-purple darken-3 waves-effect waves-light">
               Register <i class="material-icons right">send</i>
             </button>
