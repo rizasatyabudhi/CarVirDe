@@ -24,7 +24,7 @@ export default class AttractionCard extends Component {
                     <li>
                       <i className="material-icons">attach_money</i>
                       <span>
-                        Rp
+                        Rp &nbsp;
                         {this.props.harga}
                         /Pax
                       </span>

@@ -73,8 +73,9 @@ export default class CarCard extends Component {
                     <li>
                       <div className="row">
                         <div className="col s12">
-                          <span className="category">Harga /hari &nbsp;:</span>
-                          {this.props.harga}
+                          <span className="category">Harga &nbsp;:</span>
+                          Rp &nbsp;
+                          {this.props.harga} &nbsp; /Hari
                         </div>
                       </div>
                     </li>
