@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-export default class CustomerForm extends Component {
+export default class AttractionOwnerForm extends Component {
   render() {
     return (
       <div className="row ">
         <form className="col s12 center-align">
           <div className="card-panel z-depth-2" style={{ marginTop: "3em" }}>
             <div className="col s12">
-              <h2>Customer</h2>
+              <h2>Pemilik Tempat Wisata</h2>
             </div>
             <div className="row">
               <div className="input-field col s6">
@@ -25,13 +25,15 @@ export default class CustomerForm extends Component {
                 <input type="text" />
               </div>
               <div className="input-field col s6">
-                <label style={{ marginTop: "-30px" }}>Nama Lengkap</label>
+                <label style={{ marginTop: "-30px" }}>Nama Tempat Wisata</label>
                 <input type="text" />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s6">
-                <label style={{ marginTop: "-30px" }}>Alamat</label>
+                <label style={{ marginTop: "-30px" }}>
+                  Alamat Tempat Wisata
+                </label>
                 <input type="text" />
               </div>
               <div className="input-field col s6">

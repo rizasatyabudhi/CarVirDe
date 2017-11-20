@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import CustomerForm from "../modules/Forms/CustomerForm";
-import CarOwnerForm from "../modules/Forms/CarOwnerForm";
-import AttractionOwnerForm from "../modules/Forms/AttractionOwnerForm";
+import {
+  CustomerLoginForm,
+  CarOwnerLoginForm,
+  AttractionOwnerLoginForm
+} from "../modules/Forms/LoginForm";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-export default class Register extends Component {
+export default class Login extends Component {
   render() {
     return (
       <div className="container">
@@ -23,13 +25,13 @@ export default class Register extends Component {
             </div>
           </TabList>
           <TabPanel>
-            <CustomerForm />
+            <CustomerLoginForm />
           </TabPanel>
           <TabPanel>
-            <CarOwnerForm />
+            <CarOwnerLoginForm />
           </TabPanel>
           <TabPanel>
-            <AttractionOwnerForm />
+            <AttractionOwnerLoginForm />
           </TabPanel>
         </Tabs>
       </div>

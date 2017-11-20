@@ -24,56 +24,16 @@ export default class componentName extends Component {
 
         <section class="sections section-a">
           <div class="container">
-            <div className="row">
-              <div className="col s3 center-align">
-                <div className="col s12 center-align">
-                  <i className="material-icons large">directions_car</i>
-                </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
-              </div>
-              <div className="col s3 center-align">
-                <div className="col s12 center-align">
-                  <i className="material-icons large">beach_access</i>
-                </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
-              </div>
-              <div className="col s3 center-align">
-                <div className="col s12 center-align">
-                  <i className="material-icons large">attach_money</i>
-                </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
-              </div>
-              <div className="col s3 center-align">
-                <div className="col s12 center-align">
-                  <i className="material-icons large">mood</i>
-                </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
-              </div>
-            </div>
+            <p>
+              {" "}
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
+              impedit amet minima iste autem cumque et maiores blanditiis
+              doloribus aut dolorum quaerat non est voluptatum, tempore ut
+              dolorem voluptas quod quae accusantium, ex inventore ducimus.
+              Beatae mollitia exercitationem, quam similique, consectetur
+              ratione reprehenderit delectus neque eligendi facere soluta dolor
+              ducimus!
+            </p>
           </div>
         </section>
 
@@ -84,49 +44,29 @@ export default class componentName extends Component {
                 <div className="col s12 center-align">
                   <i className="material-icons large">directions_car</i>
                 </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
+                Kami menyediakan Mobil-Mobil dengan performa dan gaya terbaik
+                untuk menemani Perjalanan anda
               </div>
               <div className="col s3 center-align">
                 <div className="col s12 center-align">
                   <i className="material-icons large">beach_access</i>
                 </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
+                Kami menyediakan Perjalanan terbaik yang akan menjadi momen
+                berharga tak terlupakan untuk anda
               </div>
               <div className="col s3 center-align">
                 <div className="col s12 center-align">
                   <i className="material-icons large">attach_money</i>
                 </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
+                Kami menyediakan Penawaran harga terbaik dan sesuai dengan
+                keinginan anda pelayanan
               </div>
               <div className="col s3 center-align">
                 <div className="col s12 center-align">
                   <i className="material-icons large">mood</i>
                 </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                impedit amet minima iste autem cumque et maiores blanditiis
-                doloribus aut dolorum quaerat non est voluptatum, tempore ut
-                dolorem voluptas quod quae accusantium, ex inventore ducimus.
-                Beatae mollitia exercitationem, quam similique, consectetur
-                ratione reprehenderit delectus neque eligendi facere soluta
-                dolor ducimus!
+                Kami menyerahkan pilihan 100% kepada anda. kenyamanan dalam
+                perjalanan anda adalah prioritas kami
               </div>
             </div>
           </div>

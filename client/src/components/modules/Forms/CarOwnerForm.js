@@ -11,22 +11,36 @@ export default class CarOwnerForm extends Component {
             </div>
             <div className="row">
               <div className="input-field col s6">
-                <input type="text" placeholder="Username" />
+                <label style={{ marginTop: "-30px" }}>Username</label>
+                <input type="text" />
               </div>
               <div className="input-field col s6">
-                <input type="text" placeholder="Email" />
+                <label style={{ marginTop: "-30px" }}>Password</label>
+                <input type="text" />
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s12">
-                <input type="text" placeholder="Address" />
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Email</label>
+                <input type="text" />
               </div>
-              <div className="input-field col s12">
-                <input type="text" placeholder="Phone Number" />
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Nama Lengkap</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>Alamat Rental</label>
+                <input type="text" />
+              </div>
+              <div className="input-field col s6">
+                <label style={{ marginTop: "-30px" }}>No Telfon</label>
+                <input type="text" />
               </div>
             </div>
             <button className="btn deep-purple darken-3 waves-effect waves-light">
-              Submit <i class="material-icons right">send</i>
+              Register <i class="material-icons right">send</i>
             </button>
           </div>
         </form>
