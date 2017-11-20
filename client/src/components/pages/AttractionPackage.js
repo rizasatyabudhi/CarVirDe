@@ -12,19 +12,20 @@ class AttractionPackage extends Component {
       {
         nama: "Waterbom",
         alamat: "hehe",
-        harga: "hehe",
-        deskripsi: "hehe"
+        harga: "85000",
+        deskripsi: "hehe",
+        total: "255000"
       },
       {
         nama: "Pantai Kuta",
         alamat: "hehe",
-        harga: "hehe",
+        harga: "70000",
         deskripsi: "hehe"
       },
       {
         nama: "Sagan",
         alamat: "hehe",
-        harga: "hehe",
+        harga: "100000",
         deskripsi: "hehe"
       }
     ];
@@ -32,19 +33,20 @@ class AttractionPackage extends Component {
       {
         nama: "Tomaha",
         alamat: "hehe",
-        harga: "hehe",
-        deskripsi: "hehe"
+        harga: "65000",
+        deskripsi: "hehe",
+        total: "215000"
       },
       {
         nama: "Liquid",
         alamat: "hehe",
-        harga: "hehe",
+        harga: "70000",
         deskripsi: "hehe"
       },
       {
         nama: "Bosche",
         alamat: "hehe",
-        harga: "hehe",
+        harga: "80000",
         deskripsi: "hehe"
       }
     ];

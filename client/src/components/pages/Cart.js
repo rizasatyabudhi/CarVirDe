@@ -14,20 +14,37 @@ class Cart extends Component {
     const {
       attraction = "",
       car = "",
-      attractionPackage
+      attractionPackage = ""
     } = store.getState().orders;
-    function calculateTotal() {
+
+    function calculateTotalWithoutPackage() {
       return attraction
         ? parseInt(attraction.harga) + parseInt(car.harga)
         : 0 + parseInt(car.harga);
     }
+
+    function calculateTotalWithPackage() {
+      return attractionPackage
+        ? parseInt(attractionPackage[0].total) + parseInt(car.harga)
+        : 0 + parseInt(car.harga);
+    }
+
+    // function calculatePackage() {
+    //   return (
+    //     parseInt(attractionPackage[0].harga) +
+    //     parseInt(attractionPackage[1].harga) +
+    //     parseInt(attractionPackage[2].harga)
+    //   );
+    // }
+    // console.log(calculatePackage(), "BAYAR JING");
+
     if (!car) {
       return <h4 style={{ height: "100vh" }}>Belanja dulu gan</h4>;
     }
 
-    const coba = attractionPackage.map((value, index) => {
-      return value.nama;
-    });
+    // const coba = attractionPackage.map((value, index) => {
+    //   return value.nama;
+    // });
 
     return (
       <div className="container">
@@ -56,20 +73,30 @@ class Cart extends Component {
             console.log(value, "HAHA");
           })}
 */}
+          {attractionPackage && (
+            <AttractionPackageCart
+              nama0={attractionPackage[0].nama}
+              alamat0={attractionPackage[0].alamat}
+              harga0={attractionPackage[0].harga}
+              nama1={attractionPackage[1].nama}
+              alamat1={attractionPackage[1].alamat}
+              harga1={attractionPackage[1].harga}
+              nama2={attractionPackage[2].nama}
+              alamat2={attractionPackage[2].alamat}
+              harga2={attractionPackage[2].harga}
+              total={attractionPackage[0].total}
+            />
+          )}
 
-          <AttractionPackageCart
-            nama0={attractionPackage[0].nama}
-            alamat0={attractionPackage[0].alamat}
-            harga0={attractionPackage[0].harga}
-            nama1={attractionPackage[1].nama}
-            alamat1={attractionPackage[1].alamat}
-            harga1={attractionPackage[1].harga}
-            nama2={attractionPackage[2].nama}
-            alamat2={attractionPackage[2].alamat}
-            harga2={attractionPackage[2].harga}
+          {/* <TotalPriceCart total={ calculateTotal()} />*/}
+
+          <TotalPriceCart
+            total={
+              attraction
+                ? calculateTotalWithoutPackage()
+                : calculateTotalWithPackage()
+            }
           />
-
-          <TotalPriceCart total={calculateTotal()} />
         </div>
       </div>
     );

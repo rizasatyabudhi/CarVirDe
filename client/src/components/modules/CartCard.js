@@ -115,7 +115,7 @@ export class AttractionPackageCart extends Component {
   render() {
     return (
       <div class="col s12">
-        <div class="card-panel hoverable" style={{ height: "300px" }}>
+        <div class="card-panel hoverable" style={{ height: "370px" }}>
           <h5>Travel Package Order</h5>
           <div class="col s4">
             <div class="card horizontal z-depth-3">
@@ -221,6 +221,9 @@ export class AttractionPackageCart extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="col s12">
+            <h5 className="right">Rp {this.props.total}</h5>
           </div>
         </div>
       </div>
