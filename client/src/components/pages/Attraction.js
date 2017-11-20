@@ -4,6 +4,7 @@ import { fetchAttractions, addOrderAttraction } from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
 import Alert from "react-s-alert";
+import { Link } from "react-router-dom";
 
 class Attraction extends Component {
   componentDidMount() {
@@ -58,6 +59,22 @@ class Attraction extends Component {
           ) : (
             <div>Loading...</div>
           )}
+          <div>
+            <div className="row">
+              <div className="col s12 center-align">
+                <h5> Bingung Memilih Tempat Wisata?</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col s12 center-align">
+                <Link to={"/attractionPackage"}>
+                  <button class="btn waves-effect waves-light">
+                    Lihat Paket Wisata Kami
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

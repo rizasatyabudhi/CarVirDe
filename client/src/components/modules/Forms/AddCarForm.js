@@ -31,7 +31,7 @@ class AddCarForm extends Component {
         <form className="col s12 center-align">
           <div className="card-panel z-depth-2" style={{ marginTop: "3em" }}>
             <div className="col s12">
-              <h2>Add Car</h2>
+              <h2>Tambah Mobil Rental</h2>
             </div>
             <div className="row">
               <div className="input-field col s6">

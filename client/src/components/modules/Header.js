@@ -21,19 +21,10 @@ class Header extends Component {
               <Link to={"login"}>Login</Link>
             </li>
             <li>
-              <Link to={"rentCar"}>Rent a Car</Link>
+              <Link to={"addCar"}>Tambah Mobil Rental</Link>
             </li>
             <li>
-              <Link to={"addCar"}>Add Car</Link>
-            </li>
-            <li>
-              <Link to={"attraction"}>Attraction</Link>
-            </li>
-            <li>
-              <Link to={"attractionPackage"}>Attraction Package</Link>
-            </li>
-            <li>
-              <Link to={"addAttraction"}>Add Attraction</Link>
+              <Link to={"addAttraction"}>Tambah Tempat Wisata</Link>
             </li>
             <li>
               <Link to={"cart"}>
