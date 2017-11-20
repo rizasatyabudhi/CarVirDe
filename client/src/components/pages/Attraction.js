@@ -16,7 +16,7 @@ class Attraction extends Component {
     if (orders.attractionPackage) {
       return (
         <div className="center align">
-          <h4 style={{ height: "100vh" }}>Gakboleh</h4>
+          <h4 style={{ height: "100vh" }}>Anda Sudah Memilih Menggunakan Travel Package</h4>
         </div>
       );
     }
