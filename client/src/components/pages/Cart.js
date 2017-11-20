@@ -3,19 +3,32 @@ import {
   CarCart,
   AttractionCart,
   AttractionPackageCart,
-  TotalPriceCart
+  TotalPriceCart,
+  BookId
 } from "../modules/CartCard";
 import { connect } from "react-redux";
 import { store } from "../../index";
-import CarCard from "../modules/Car Rent/CarCard";
+import shortid from "shortid";
 
 class Cart extends Component {
+  constructor() {
+    super();
+    this.state = {
+      book: ""
+    };
+  }
+
   render() {
     const {
       attraction = "",
       car = "",
       attractionPackage = ""
     } = store.getState().orders;
+
+    function generateBook(e) {
+      e.preventDefault;
+      this.setState({ book: shortid.generate() });
+    }
 
     function calculateTotalWithoutPackage() {
       return attraction
@@ -59,15 +72,6 @@ class Cart extends Component {
               harga={attraction.harga}
             />
           )}
-          {/*         {attractionPackage.map((value, index) => {
-            <AttractionPackageCart
-              nama={value.nama}
-              alamat={value.alamat}
-              harga={value.harga}
-            />;
-            console.log(value, "HAHA");
-          })}
-*/}
           {attractionPackage && (
             <AttractionPackageCart
               nama0={attractionPackage[0].nama}
@@ -92,6 +96,17 @@ class Cart extends Component {
                 : calculateTotalWithPackage()
             }
           />
+          <BookId book={this.state.book} />
+          <button
+            class="btn waves-effect waves-light"
+            name="action"
+            onClick={e => {
+              e.preventDefault();
+              this.setState({ book: shortid.generate() });
+            }}
+          >
+            Bayar
+          </button>
         </div>
       </div>
     );

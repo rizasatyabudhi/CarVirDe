@@ -6,3 +6,8 @@
   display: inline-block;
   margin-left: 5px;
 }
+
+.label-style {
+  color: black;
+  margin-left: 20px;
+}

@@ -16,7 +16,9 @@ class Attraction extends Component {
     if (orders.attractionPackage) {
       return (
         <div className="center align">
-          <h4 style={{ height: "100vh" }}>Anda Sudah Memilih Menggunakan Travel Package</h4>
+          <h4 style={{ height: "100vh" }}>
+            Anda Sudah Memilih Menggunakan Travel Package
+          </h4>
         </div>
       );
     }
@@ -43,8 +45,8 @@ class Attraction extends Component {
                     Alert.success("Added to Cart", {
                       position: "bottom-right",
                       effect: "jelly",
-                      beep: false,
-                      timeout: 2000,
+                      beep: true,
+                      timeout: 1000,
                       onShow: () => {
                         this.props.addOrderAttraction(attraction);
                       }

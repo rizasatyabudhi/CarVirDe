@@ -53,6 +53,25 @@ export class CarCart extends Component {
                       </li>
                     </ul>
                   </div>
+                  <div className="col s12">
+                    <span className="category">Pakai Supir: </span>
+                    <input
+                      class="with-gap"
+                      name="group"
+                      type="radio"
+                      id="yes"
+                    />
+                    <label for="yes" className="label-style">
+                      Ya
+                    </label>
+                    <input class="with-gap" name="group" type="radio" id="no" />
+                    <label for="no" className="label-style">
+                      Tidak
+                    </label>
+                  </div>
+                  <div className="col s12">
+                    <input type="text" class="datepicker" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -236,13 +255,34 @@ export class TotalPriceCart extends Component {
     return (
       <div>
         <div class="row">
-          <div class="col s12 center-align">
+          <div class="col s6 center-align">
             <div
               style={{ display: "inline-block", marginRight: "65px" }}
               className="right"
             >
               <span class="black-text">
                 <h5>Total Price: Rp {this.props.total}</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export class BookId extends Component {
+  render() {
+    return (
+      <div>
+        <div class="row">
+          <div class="col s6 right-align">
+            <div
+              style={{ display: "inline-block", marginRight: "65px" }}
+              className="left"
+            >
+              <span class="black-text">
+                <h5>{this.props.book}</h5>
               </span>
             </div>
           </div>
