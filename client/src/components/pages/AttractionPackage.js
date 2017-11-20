@@ -12,20 +12,20 @@ class AttractionPackage extends Component {
     const { orders } = store.getState();
     const Package1 = [
       {
-        nama: "Burjo",
+        nama: "Ullen Sentalu Museum",
         alamat: "hehe",
         harga: "85000",
         deskripsi: "hehe",
         total: "255000"
       },
       {
-        nama: "Kantin MIPA",
+        nama: "Merapi Lava Tour",
         alamat: "hehe",
         harga: "70000",
         deskripsi: "hehe"
       },
       {
-        nama: "Kindai",
+        nama: "Jomblang Cave",
         alamat: "hehe",
         harga: "100000",
         deskripsi: "hehe"
@@ -33,20 +33,20 @@ class AttractionPackage extends Component {
     ];
     const Package2 = [
       {
-        nama: "Nasi Uduk Palagan",
+        nama: "Sewu Temple",
         alamat: "hehe",
         harga: "65000",
         deskripsi: "hehe",
         total: "215000"
       },
       {
-        nama: "Preksu",
+        nama: "Keraton Jogja",
         alamat: "hehe",
         harga: "70000",
         deskripsi: "hehe"
       },
       {
-        nama: "Krisbar",
+        nama: "Hutan Pinus Imogiri",
         alamat: "hehe",
         harga: "80000",
         deskripsi: "hehe"
@@ -55,7 +55,9 @@ class AttractionPackage extends Component {
     if (orders.attraction) {
       return (
         <div className="center align">
-          <h4 style={{ height: "100vh" }}>Anda Sudah Memilih Untuk Tidak Menggunakan Paket</h4>
+          <h4 style={{ height: "100vh" }}>
+            Anda Sudah Memilih Untuk Tidak Menggunakan Paket
+          </h4>
         </div>
       );
     }

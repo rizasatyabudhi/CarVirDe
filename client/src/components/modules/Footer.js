@@ -12,7 +12,17 @@ export default class Footer extends Component {
                 <p class="grey-text text-lighten-4">Your Traveling Solution</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <i className="material-icons">contact_phone</i>
+                <h5
+                  style={{
+                    display: "inline-block",
+                    marginLeft: "20px",
+                    fontSize: "20px"
+                  }}
+                  class="white-text"
+                >
+                  087877643416
+                </h5>
                 <ul>
                   {/*  <li>
                     <a class="grey-text text-lighten-3" href="#!">
