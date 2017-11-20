@@ -16,6 +16,7 @@ import "react-s-alert/dist/s-alert-css-effects/stackslide.css";
 
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
+import RegisterDriver from "./pages/RegisterDriver";
 import Login from "./pages/Login";
 import RentCar from "./pages/RentCar";
 import Attraction from "./pages/Attraction";
@@ -36,6 +37,7 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/addDriver" component={RegisterDriver} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/rentCar" component={RentCar} />
             <Route exact path="/attraction" component={Attraction} />

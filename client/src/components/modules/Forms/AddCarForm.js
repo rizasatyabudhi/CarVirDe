@@ -80,7 +80,7 @@ class AddCarForm extends Component {
                 />
               </div>
               <div className="input-field col s6">
-                <label style={{ marginTop: "-30px" }}>Harga/hari</label>
+                <label style={{ marginTop: "-30px" }}>Harga /hari</label>
                 <input
                   type="text"
                   onChange={e => this.setState({ harga: e.target.value })}
