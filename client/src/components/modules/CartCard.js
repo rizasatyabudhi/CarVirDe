@@ -6,7 +6,7 @@ export class CarCart extends Component {
     return (
       <div class="col s12">
         <div class="card-panel hoverable hover">
-          <h5>Car Order</h5>
+          <h5>Orderan Rental Mobil</h5>
           <div className="row">
             <div className="col s10">
               <div className="card-content  ">
@@ -69,6 +69,10 @@ export class CarCart extends Component {
                       Tidak
                     </label>
                   </div>
+                  <div className="col s4" style={{ marginTop: "20px" }}>
+                    <span className="category">Tanggal Rental: </span>
+                    <input type="text" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,7 +91,7 @@ export class AttractionCart extends Component {
     return (
       <div class="col s12">
         <div class="card-panel hoverable">
-          <h5>Attraction Order</h5>
+          <h5>Orderan Tempat Wisata</h5>
           <div className="row">
             <div className="col s10">
               <div className="card-content  ">
@@ -114,6 +118,10 @@ export class AttractionCart extends Component {
                       </li>
                     </ul>
                   </div>
+                  <div className="col s6" style={{ marginTop: "20px" }}>
+                    <span className="category">Tanggal Kedatangan: </span>
+                    <input type="text" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,8 +139,8 @@ export class AttractionPackageCart extends Component {
   render() {
     return (
       <div class="col s12">
-        <div class="card-panel hoverable" style={{ height: "370px" }}>
-          <h5>Travel Package Order</h5>
+        <div class="card-panel hoverable" style={{ height: "470px" }}>
+          <h5>Orderan Paket Wisata</h5>
           <div class="col s4">
             <div class="card horizontal z-depth-3">
               <div class="card-stacked">
@@ -238,6 +246,10 @@ export class AttractionPackageCart extends Component {
               </div>
             </div>
           </div>
+          <div className="col s4" style={{ marginTop: "20px" }}>
+            <span className="category">Tanggal Kedatangan: </span>
+            <input type="text" />
+          </div>
           <div className="col s12">
             <h5 className="right">Rp {this.props.total}</h5>
           </div>
@@ -258,7 +270,7 @@ export class TotalPriceCart extends Component {
               className="right"
             >
               <span class="black-text">
-                <h5>Total Price: Rp {this.props.total}</h5>
+                <h5>Total Harga: Rp {this.props.total}</h5>
               </span>
             </div>
           </div>

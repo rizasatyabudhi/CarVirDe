@@ -13,43 +13,43 @@ class AttractionPackage extends Component {
     const Package1 = [
       {
         nama: "Ullen Sentalu Museum",
-        alamat: "hehe",
+        alamat: "Jalan Boyong KM 25, Kaliurang Barat",
         harga: "85000",
-        deskripsi: "hehe",
+        deskripsi: "deskripsi",
         total: "255000"
       },
       {
         nama: "Merapi Lava Tour",
-        alamat: "hehe",
+        alamat: "Jalan Kaliurang KM. 23., Pakem",
         harga: "70000",
-        deskripsi: "hehe"
+        deskripsi: "deskripsi"
       },
       {
         nama: "Jomblang Cave",
-        alamat: "hehe",
+        alamat: " Jl. Ireda, MG1 No.65/139",
         harga: "100000",
-        deskripsi: "hehe"
+        deskripsi: "deskripsi"
       }
     ];
     const Package2 = [
       {
-        nama: "Sewu Temple",
-        alamat: "hehe",
+        nama: "Candi Sewu",
+        alamat: "Jl. Raya Solo KM.15",
         harga: "65000",
-        deskripsi: "hehe",
+        deskripsi: "deskripsi",
         total: "215000"
       },
       {
         nama: "Keraton Jogja",
-        alamat: "hehe",
+        alamat: " Jalan Rotowijayan Blok No. 1",
         harga: "70000",
-        deskripsi: "hehe"
+        deskripsi: "deskripsi"
       },
       {
         nama: "Hutan Pinus Imogiri",
-        alamat: "hehe",
+        alamat: " Rotowijaya No.1, Imogiri",
         harga: "80000",
-        deskripsi: "hehe"
+        deskripsi: "deskripsi"
       }
     ];
     if (orders.attraction) {
@@ -65,7 +65,7 @@ class AttractionPackage extends Component {
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <h3>Package 1</h3>
+            <h3>Paket 1</h3>
             <button
               style={{ marginBottom: "20px" }}
               class="btn waves-effect waves-light"
@@ -101,7 +101,7 @@ class AttractionPackage extends Component {
         </div>
         <div className="row">
           <div className="col s12">
-            <h3>Package 2</h3>
+            <h3>Paket 2</h3>
             <button
               style={{ marginBottom: "20px" }}
               class="btn waves-effect waves-light"

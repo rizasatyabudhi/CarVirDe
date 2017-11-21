@@ -56,7 +56,7 @@ class Cart extends Component {
 
     return (
       <div className="container">
-        <h4>Your Orders</h4>
+        <h4>Orderan Anda</h4>
         <div class="row">
           <CarCart
             tipe={car.tipe}
