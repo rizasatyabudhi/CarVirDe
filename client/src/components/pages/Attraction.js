@@ -43,11 +43,11 @@ class Attraction extends Component {
                   // }
                   onClick={e => {
                     e.preventDefault();
-                    Alert.success("Added to Cart", {
+                    Alert.success("Berhasil ditambah ke keranjang", {
                       position: "bottom-right",
                       effect: "jelly",
-                      beep: true,
-                      timeout: 1000,
+                      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+                      timeout: 2500,
                       onShow: () => {
                         this.props.addOrderAttraction(attraction);
                       }

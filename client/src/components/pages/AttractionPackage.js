@@ -13,7 +13,7 @@ class AttractionPackage extends Component {
     const Package1 = [
       {
         nama: "Ullen Sentalu Museum",
-        alamat: "Jalan Boyong KM 25, Kaliurang Barat",
+        alamat: "Jalan Boyong KM 25, Kaliurang",
         harga: "85000",
         deskripsi: "deskripsi",
         total: "255000"
@@ -73,11 +73,11 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                Alert.success("Added to Cart", {
+                Alert.success("Berhasil ditambah ke keranjang", {
                   position: "bottom-right",
                   effect: "jelly",
-                  beep: false,
-                  timeout: 2000,
+                  beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+                  timeout: 2500,
                   onShow: () => {
                     this.props.addOrderAttractionPackage(Package1);
                   }
@@ -109,11 +109,11 @@ class AttractionPackage extends Component {
               name="action"
               onClick={e => {
                 e.preventDefault();
-                Alert.success("Added to Cart", {
+                Alert.success("Berhasil ditambah ke keranjang", {
                   position: "bottom-right",
                   effect: "jelly",
-                  beep: false,
-                  timeout: 2000,
+                  beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+                  timeout: 2500,
                   onShow: () => {
                     this.props.addOrderAttractionPackage(Package2);
                   }

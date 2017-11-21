@@ -39,11 +39,11 @@ class RentCar extends Component {
                   // }}
                   onClick={e => {
                     e.preventDefault();
-                    Alert.success("Added to Cart", {
+                    Alert.success("Berhasil ditambah ke keranjang", {
                       position: "bottom-right",
                       effect: "jelly",
-                      beep: false,
-                      timeout: 2000
+                      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+                      timeout: 2500
                       // offset: 100
                     });
                     this.props.addOrderCar(car);

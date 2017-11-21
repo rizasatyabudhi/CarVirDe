@@ -8,7 +8,7 @@ export default class Footer extends Component {
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">CarVirde</h5>
+                <h5 class="white-text logo-font">CarVirde</h5>
                 <p class="grey-text text-lighten-4">Your Traveling Solution</p>
               </div>
               <div class="col l4 offset-l2 s12">

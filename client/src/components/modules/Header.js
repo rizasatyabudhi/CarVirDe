@@ -10,7 +10,11 @@ class Header extends Component {
     return (
       <nav style={{ marginBottom: "20px" }}>
         <div class="nav-wrapper deep-purple darken-3 lighten-1">
-          <Link to={"/"} className="brand-logo" style={{ marginLeft: "1em" }}>
+          <Link
+            to={"/"}
+            className="brand-logo logo-font"
+            style={{ marginLeft: "1em" }}
+          >
             CarVirde
           </Link>
           <ul class="right">

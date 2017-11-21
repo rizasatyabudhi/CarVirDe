@@ -9,14 +9,18 @@ export default class componentName extends Component {
         <header class="v-header containerz">
           <div class="fullscreen-video-wrap">
             <video
-              src="https://www.videvo.net/videvo_files/converted/2017_08/preview/170728_Berlin_C_029.mp485255.webm"
+              // src="https://www.videvo.net/videvo_files/converted/2017_08/preview/170728_Berlin_C_029.mp485255.webm"
+              src="https://www.videvo.net/videvo_files/converted/2016_09/preview/160820_245_NYC_TimeSquare10_1080p.mp485564.webm"
+              // src="https://www.videvo.net/videvo_files/converted/2016_09/preview/160820_230_NYC_TimeSquare2_1080p.mp482553.webm"
               autoplay=""
               loop
             />
           </div>
           <div class="header-overlay" />
           <div class="header-content center" style={{ margin: "0 auto" }}>
-            <h1 style={{ fontSize: "180px" }}>CarVirde</h1>
+            <h1 style={{ fontSize: "180px" }} className="logo-font">
+              CarVirde
+            </h1>
             <p style={{ fontSize: "30px", margin: "0" }}>
               Your Traveling Solution
             </p>
