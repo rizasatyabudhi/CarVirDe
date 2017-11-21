@@ -32,6 +32,17 @@
       "alamat": "Jalan ",
       "foto": "https://toyota.com.my/ToyotaOfficialWebsite/files/71/71029eaa-1e5f-4539-8d71-ec8d361c358c.jpg",
       "id": "dac3be04-9f59-462b-98ee-c7dcf467e94d"
+    },
+    {
+      "tipe": "fdsf",
+      "merk": "fdwf",
+      "kapasitas": "fewf",
+      "transmisi": "fewf",
+      "tahun": "fewf",
+      "harga": "fewf",
+      "alamat": "fewfe",
+      "foto": "fewfew",
+      "id": "d0ede2fd-2f39-4738-bd4e-c61a0c11ba3c"
     }
   ],
   "attractions": [
@@ -74,6 +85,14 @@
       "deskripsi": "deskripsi",
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Prambanan_Java245.jpg/1200px-Prambanan_Java245.jpg",
       "id": "b83bda6e-1876-4d29-9296-086ec336b719"
+    },
+    {
+      "nama": "df",
+      "harga": "fdw",
+      "alamat": "few",
+      "deskripsi": "few",
+      "foto": "fe",
+      "id": "fb8eb574-7b98-4c1c-b7f8-b01d24c9278f"
     }
   ]
 }
