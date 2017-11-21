@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import OrientationExample from "../modules/Datepicker";
 import { Link } from "react-router-dom";
 
 export default class componentName extends Component {

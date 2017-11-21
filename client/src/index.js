@@ -6,7 +6,6 @@ import registerServiceWorker from "./registerServiceWorker";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
-import promise from "redux-promise";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import "materialize-css/dist/css/materialize.min.css";
