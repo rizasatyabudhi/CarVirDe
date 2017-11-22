@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import AttractionCard from "../modules/Attraction/AttractionCard";
-import { fetchAttractions, addOrderAttraction } from "../../actions/actions";
+import {
+  addOrderAttraction,
+  startFetchAttractions
+} from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
 import Alert from "react-s-alert";
@@ -8,7 +11,7 @@ import { Link } from "react-router-dom";
 
 class Attraction extends Component {
   componentDidMount() {
-    this.props.fetchAttractions();
+    this.props.startFetchAttractions();
   }
 
   render() {
@@ -85,6 +88,6 @@ function mapStateToProps(state) {
   return { state };
 }
 export default connect(mapStateToProps, {
-  fetchAttractions,
+  startFetchAttractions,
   addOrderAttraction
 })(Attraction);

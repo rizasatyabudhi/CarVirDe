@@ -5,14 +5,15 @@ import Alert from "react-s-alert";
 import {
   fetchCars,
   fetchAttractions,
-  addOrderCar
+  addOrderCar,
+  startFetchCars
 } from "../../actions/actions";
 import { store } from "../../index";
 import { Link } from "react-router-dom";
 
 class RentCar extends Component {
   componentDidMount() {
-    this.props.fetchCars();
+    this.props.startFetchCars();
   }
 
   render() {
@@ -87,5 +88,6 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps, {
   fetchCars,
   fetchAttractions,
-  addOrderCar
+  addOrderCar,
+  startFetchCars
 })(RentCar);

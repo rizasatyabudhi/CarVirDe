@@ -5,16 +5,16 @@ import App from "./components/App";
 import registerServiceWorker from "./registerServiceWorker";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import reduxThunk from "redux-thunk";
+import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-
+import "./firebase/firebase";
 import "materialize-css/dist/css/materialize.min.css";
 
 import reducers from "./reducers/index";
 export const store = createStore(
   reducers,
   {},
-  composeWithDevTools(applyMiddleware(reduxThunk))
+  composeWithDevTools(applyMiddleware(thunk))
 );
 window.store = store;
 
