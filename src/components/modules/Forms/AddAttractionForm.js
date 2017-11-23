@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addAttraction } from "../../../actions/actions";
+import { startAddAttraction } from "../../../actions/actions";
 import Alert from "react-s-alert";
 
 class AddAttractionForm extends Component {
@@ -16,16 +16,20 @@ class AddAttractionForm extends Component {
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
+  // onFormSubmit(e) {
+  //   e.preventDefault();
+  //   this.props.startAddAttraction(this.state, () => {
+  //     Alert.success("Berhasil Tambah Tempat Wisata", {
+  //       position: "bottom-right",
+  //       effect: "jelly",
+  //       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+  //       timeout: 2500
+  //     });
+  //   });
+  // }
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.addAttraction(this.state).then(() => {
-      Alert.success("Berhasil Tambah Tempat Wisata", {
-        position: "bottom-right",
-        effect: "jelly",
-        beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
-        timeout: 2500
-      });
-    });
+    this.props.startAddAttraction(this.state);
   }
   render() {
     return (
@@ -88,4 +92,6 @@ class AddAttractionForm extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { addAttraction })(AddAttractionForm);
+export default connect(mapStateToProps, { startAddAttraction })(
+  AddAttractionForm
+);

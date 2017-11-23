@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addCar } from "../../../actions/actions";
+import { addCar, startAddCar } from "../../../actions/actions";
 import Alert from "react-s-alert";
 
 class AddCarForm extends Component {
@@ -21,7 +21,7 @@ class AddCarForm extends Component {
   }
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.addCar(this.state).then(() => {
+    this.props.startAddCar(this.state, () => {
       Alert.success("Berhasil Tambah Mobil", {
         position: "bottom-right",
         effect: "jelly",
@@ -119,4 +119,4 @@ class AddCarForm extends Component {
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, { addCar })(AddCarForm);
+export default connect(mapStateToProps, { addCar, startAddCar })(AddCarForm);

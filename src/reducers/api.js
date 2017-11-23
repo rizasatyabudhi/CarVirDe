@@ -18,6 +18,18 @@ export const attractions = function(state = null, action) {
   }
 };
 
+export const add = function(state = null, action) {
+  console.log(action);
+  switch (action.type) {
+    case "ADD_CARS":
+      return action.payload;
+    case "ADD_ATTRACTION":
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
 export const orders = function(state = [], action) {
   console.log(action);
   switch (action.type) {
