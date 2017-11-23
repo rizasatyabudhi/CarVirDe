@@ -9,7 +9,7 @@
     "start": "npm run start --prefix client",
     "dev": "concurrently \"npm run json-server\" \"npm run client\"",
     "json-server": "json-server --watch -p 4000 db.json",
-    "heroku-postbuild":"npm install"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "rizasatyabudhi",
   "license": "ISC",
