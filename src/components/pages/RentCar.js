@@ -5,14 +5,15 @@ import Alert from "react-s-alert";
 import {
   fetchCars,
   fetchAttractions,
-  addOrderCar
+  addOrderCar,
+  startFetchCars
 } from "../../actions/actions";
 import { store } from "../../index";
 import { Link } from "react-router-dom";
 
 class RentCar extends Component {
   componentDidMount() {
-    this.props.fetchCars();
+    this.props.startFetchCars();
   }
 
   render() {
@@ -24,6 +25,7 @@ class RentCar extends Component {
             cars.map((car, index) => {
               return (
                 <CarCard
+                  // image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg"
                   foto={car.foto}
                   tipe={car.tipe}
                   merk={car.merk}
@@ -32,6 +34,10 @@ class RentCar extends Component {
                   kapasitas={car.kapasitas}
                   harga={car.harga}
                   alamat={car.alamat}
+                  // onClick={e => {
+                  //   e.preventDefault();
+                  //   this.props.addOrderCar(car);
+                  // }}
                   onClick={e => {
                     e.preventDefault();
                     Alert.success("Berhasil ditambah ke keranjang", {
@@ -39,6 +45,7 @@ class RentCar extends Component {
                       effect: "jelly",
                       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
                       timeout: 2500
+                      // offset: 100
                     });
                     this.props.addOrderCar(car);
                   }}
@@ -81,5 +88,6 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps, {
   fetchCars,
   fetchAttractions,
-  addOrderCar
+  addOrderCar,
+  startFetchCars
 })(RentCar);
