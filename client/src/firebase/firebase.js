@@ -20,18 +20,18 @@ export { firebase, database as default };
 //   tipe: "Focus"
 // });
 
-database.ref("cars").on("value", snapshot => {
-  const cars = [];
-  snapshot.forEach(childSnapshot => {
-    cars.push({
-      // id will take the id and make it inside the array
-      id: childSnapshot.key,
-      ...childSnapshot.val()
-    });
-  });
+// database.ref("cars").on("value", snapshot => {
+//   const cars = [];
+//   snapshot.forEach(childSnapshot => {
+//     cars.push({
+//       // id will take the id and make it inside the array
+//       id: childSnapshot.key,
+//       ...childSnapshot.val()
+//     });
+//   });
 
-  console.log(cars);
-});
+//   console.log(cars);
+// });
 
 // // will be run everytime the database is changed
 // database.ref("cars").on("child_changed", snapshot => {

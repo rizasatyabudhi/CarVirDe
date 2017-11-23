@@ -16,16 +16,20 @@ class AddAttractionForm extends Component {
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
+  // onFormSubmit(e) {
+  //   e.preventDefault();
+  //   this.props.startAddAttraction(this.state, () => {
+  //     Alert.success("Berhasil Tambah Tempat Wisata", {
+  //       position: "bottom-right",
+  //       effect: "jelly",
+  //       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+  //       timeout: 2500
+  //     });
+  //   });
+  // }
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.startAddAttraction(this.state, () => {
-      Alert.success("Berhasil Tambah Tempat Wisata", {
-        position: "bottom-right",
-        effect: "jelly",
-        beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
-        timeout: 2500
-      });
-    });
+    this.props.startAddAttraction(this.state);
   }
   render() {
     return (
