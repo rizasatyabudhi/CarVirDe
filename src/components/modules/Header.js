@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 class Header extends Component {
   componentDidUpdate() {}
   render() {
-    const { orders = {} } = this.props;
+    const { orders = {}, auth = {} } = this.props;
     return (
       <nav style={{ marginBottom: "20px" }}>
         <div class="nav-wrapper deep-purple darken-3 lighten-1">
@@ -24,17 +24,23 @@ class Header extends Component {
             <li>
               <Link to={"login"}>Login</Link>
             </li>
-            <li>
-              <Link to={"addCar"}>Tambah Mobil Rental</Link>
-            </li>
-            <li>
-              <Link to={"addAttraction"}>Tambah Tempat Wisata</Link>
-            </li>
-            <li>
-              <Link to={"cart"}>
-                <i className="material-icons">shopping_cart</i>
-              </Link>
-            </li>
+            {store.getState().auth === "rent" && (
+              <li>
+                <Link to={"addCar"}>Tambah Mobil Rental</Link>
+              </li>
+            )}
+            {store.getState().auth === "attraction" && (
+              <li>
+                <Link to={"addAttraction"}>Tambah Tempat Wisata</Link>
+              </li>
+            )}
+            {store.getState().auth === "customer" && (
+              <li>
+                <Link to={"cart"}>
+                  <i className="material-icons">shopping_cart</i>
+                </Link>
+              </li>
+            )}
             <li
               className="valign-wrapper"
               style={{ marginRight: "20px", marginLeft: "-13px" }}

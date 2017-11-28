@@ -44,3 +44,12 @@ export const orders = function(state = [], action) {
       return state;
   }
 };
+
+export const auth = function(state = "", action) {
+  switch (action.type) {
+    case "LOGIN":
+      return action.payload;
+    default:
+      return state;
+  }
+};

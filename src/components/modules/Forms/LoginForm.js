@@ -19,9 +19,7 @@ export class CustomerLoginForm extends Component {
                 <input type="text" />
               </div>
             </div>
-            <button className="btn deep-purple darken-3 waves-effect waves-light">
-              Login <i class="material-icons right">send</i>
-            </button>
+            {this.props.children}
           </div>
         </form>
       </div>
@@ -48,9 +46,7 @@ export class CarOwnerLoginForm extends Component {
                 <input type="text" />
               </div>
             </div>
-            <button className="btn deep-purple darken-3 waves-effect waves-light">
-              Login <i class="material-icons right">send</i>
-            </button>
+            {this.props.children}
           </div>
         </form>
       </div>
@@ -77,9 +73,7 @@ export class AttractionOwnerLoginForm extends Component {
                 <input type="text" />
               </div>
             </div>
-            <button className="btn deep-purple darken-3 waves-effect waves-light">
-              Login <i class="material-icons right">send</i>
-            </button>
+            {this.props.children}
           </div>
         </form>
       </div>

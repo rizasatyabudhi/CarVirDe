@@ -5,8 +5,37 @@ import {
   AttractionOwnerLoginForm
 } from "../modules/Forms/LoginForm";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { connect } from "react-redux";
+import { login } from "../../actions/actions";
 
-export default class Login extends Component {
+class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onCustomerClick = this.onCustomerClick.bind(this);
+    this.onRentClick = this.onRentClick.bind(this);
+    this.onAttractionClick = this.onAttractionClick.bind(this);
+    this.onAdminClick = this.onAdminClick.bind(this);
+  }
+
+  onCustomerClick(e) {
+    e.preventDefault();
+    this.props.login("customer");
+  }
+  onRentClick(e) {
+    e.preventDefault();
+    this.props.login("rent");
+  }
+  onAttractionClick(e) {
+    e.preventDefault();
+    this.props.login("attraction");
+  }
+
+  onAdminClick(e) {
+    e.preventDefault();
+    this.props.login("admin");
+  }
+
   render() {
     return (
       <div className="container">
@@ -22,19 +51,55 @@ export default class Login extends Component {
               <Tab style={{ display: "inline-block", marginLeft: "3em" }}>
                 <h5>Pemilik Tempat Wisata</h5>
               </Tab>
+              <h4
+                style={{
+                  float: "right",
+                  display: "inline-block",
+                  color: "white"
+                }}
+                onClick={this.onAdminClick}
+              >
+                admin
+              </h4>
             </div>
           </TabList>
           <TabPanel>
-            <CustomerLoginForm />
+            <CustomerLoginForm>
+              <button
+                className="btn deep-purple darken-3 waves-effect waves-light"
+                onClick={this.onCustomerClick}
+              >
+                Login <i class="material-icons right">send</i>
+              </button>
+            </CustomerLoginForm>
           </TabPanel>
           <TabPanel>
-            <CarOwnerLoginForm />
+            <CarOwnerLoginForm>
+              <button
+                className="btn deep-purple darken-3 waves-effect waves-light"
+                onClick={this.onRentClick}
+              >
+                Login <i class="material-icons right">send</i>
+              </button>
+            </CarOwnerLoginForm>
           </TabPanel>
           <TabPanel>
-            <AttractionOwnerLoginForm />
+            <AttractionOwnerLoginForm>
+              <button
+                className="btn deep-purple darken-3 waves-effect waves-light"
+                onClick={this.onAttractionClick}
+              >
+                Login <i class="material-icons right">send</i>
+              </button>
+            </AttractionOwnerLoginForm>
           </TabPanel>
         </Tabs>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { state };
+}
+export default connect(mapStateToProps, { login })(Login);

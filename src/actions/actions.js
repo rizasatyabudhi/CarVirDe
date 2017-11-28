@@ -152,6 +152,15 @@ export function addOrderAttractionPackage(props) {
   };
 }
 
+export function login(props) {
+  return function(dispatch) {
+    store.dispatch({
+      type: "LOGIN",
+      payload: props
+    });
+  };
+}
+
 /////////////// MOCK DATABASE //////////////////
 // export function fetchCars() {
 //   return function(dispatch) {

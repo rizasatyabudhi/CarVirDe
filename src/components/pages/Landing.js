@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { store } from "../../index";
 
-export default class componentName extends Component {
+export class Landing extends Component {
   render() {
     return (
       <div>
@@ -23,11 +25,19 @@ export default class componentName extends Component {
             <p style={{ fontSize: "30px", margin: "0" }}>
               Your Traveling Solution
             </p>
-            <Link to={"/rentCar"}>
-              <button class="btn waves-effect waves-light">
-                Mulai Rental Mobil
-              </button>
-            </Link>
+            {store.getState().auth === "customer" ? (
+              <Link to={"/rentCar"}>
+                <button class="btn waves-effect waves-light">
+                  Mulai Rental Mobil
+                </button>
+              </Link>
+            ) : (
+              <Link to={"/login"}>
+                <button class="btn waves-effect waves-light">
+                  Mulai Rental Mobil
+                </button>
+              </Link>
+            )}
           </div>
         </header>
 
@@ -69,3 +79,8 @@ export default class componentName extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { state };
+}
+export default connect(mapStateToProps, {})(Landing);

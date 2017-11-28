@@ -21,13 +21,12 @@ class AddCarForm extends Component {
   }
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.startAddCar(this.state, () => {
-      Alert.success("Berhasil Tambah Mobil", {
-        position: "bottom-right",
-        effect: "jelly",
-        beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
-        timeout: 2500
-      });
+    this.props.startAddCar(this.state);
+    Alert.success("Berhasil Tambah Mobil", {
+      position: "bottom-right",
+      effect: "jelly",
+      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+      timeout: 2500
     });
   }
 
