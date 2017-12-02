@@ -51,16 +51,6 @@ class Login extends Component {
               <Tab style={{ display: "inline-block", marginLeft: "3em" }}>
                 <h5>Pemilik Tempat Wisata</h5>
               </Tab>
-              <h4
-                style={{
-                  float: "right",
-                  display: "inline-block",
-                  color: "white"
-                }}
-                onClick={this.onAdminClick}
-              >
-                admin
-              </h4>
             </div>
           </TabList>
           <TabPanel>

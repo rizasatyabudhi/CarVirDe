@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { addCar, startAddCar } from "../../../actions/actions";
 import Alert from "react-s-alert";
 
+import gql from "graphql-tag";
+import { graphql } from "react-apollo";
+
 class AddCarForm extends Component {
   constructor(props) {
     super(props);
@@ -19,15 +22,28 @@ class AddCarForm extends Component {
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
+
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.startAddCar(this.state);
+    this.props.mutate({
+      variables: {
+        tipe: this.state.tipe,
+        merk: this.state.merk,
+        tahun: this.state.tahun,
+        transmisi: this.state.transmisi,
+        kapasitas: this.state.kapasitas,
+        harga: this.state.harga,
+        alamat: this.state.alamat,
+        foto: this.state.foto
+      }
+    });
     Alert.success("Berhasil Tambah Mobil", {
       position: "bottom-right",
       effect: "jelly",
       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
       timeout: 2500
     });
+    // .then(() => this.props.data.refetch());
   }
 
   render() {
@@ -115,7 +131,30 @@ class AddCarForm extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { state };
-}
-export default connect(mapStateToProps, { addCar, startAddCar })(AddCarForm);
+const mutation = gql`
+  mutation addCar(
+    $foto: String
+    $harga: String
+    $kapasitas: String
+    $merk: String
+    $tipe: String
+    $tahun: String
+    $transmisi: String
+  ) {
+    createCar(
+      foto: $foto
+      harga: $harga
+      kapasitas: $kapasitas
+      merk: $merk
+      tipe: $tipe
+      tahun: $tahun
+      transmisi: $transmisi
+    ) {
+      merk
+      tipe
+    }
+  }
+`;
+
+// export default connect(mapStateToProps, { addCar, startAddCar })(AddCarForm);
+export default graphql(mutation)(AddCarForm);
