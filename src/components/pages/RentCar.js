@@ -10,22 +10,19 @@ import {
 } from "../../actions/actions";
 import { store } from "../../index";
 import { Link } from "react-router-dom";
+import gql from "graphql-tag";
+import { graphql } from "react-apollo";
 
 class RentCar extends Component {
-  componentDidMount() {
-    this.props.startFetchCars();
-  }
-
   render() {
-    const { cars, orders } = store.getState();
+    const { allCars } = this.props.data;
     return (
       <div className="container">
         <div className="row">
-          {cars ? (
-            cars.map((car, index) => {
+          {allCars ? (
+            allCars.map((car, index) => {
               return (
                 <CarCard
-                  // image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg"
                   foto={car.foto}
                   tipe={car.tipe}
                   merk={car.merk}
@@ -34,10 +31,6 @@ class RentCar extends Component {
                   kapasitas={car.kapasitas}
                   harga={car.harga}
                   alamat={car.alamat}
-                  // onClick={e => {
-                  //   e.preventDefault();
-                  //   this.props.addOrderCar(car);
-                  // }}
                   onClick={e => {
                     e.preventDefault();
                     Alert.success("Berhasil ditambah ke keranjang", {
@@ -45,7 +38,6 @@ class RentCar extends Component {
                       effect: "jelly",
                       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
                       timeout: 2500
-                      // offset: 100
                     });
                     this.props.addOrderCar(car);
                   }}
@@ -55,6 +47,7 @@ class RentCar extends Component {
           ) : (
             <div>Loading...</div>
           )}
+          {/*
           {orders.length == 0 ? null : (
             <div>
               <div className="row">
@@ -76,18 +69,26 @@ class RentCar extends Component {
               </div>
             </div>
           )}
+          */}
         </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return { state };
-}
-export default connect(mapStateToProps, {
-  fetchCars,
-  fetchAttractions,
-  addOrderCar,
-  startFetchCars
-})(RentCar);
+const query = gql`
+  {
+    allCars {
+      merk
+      tipe
+      tahun
+      foto
+      transmisi
+      kapasitas
+      harga
+      alamat
+    }
+  }
+`;
+
+export default graphql(query)(RentCar);

@@ -41,16 +41,6 @@ class Header extends Component {
                 </Link>
               </li>
             )}
-            <li
-              className="valign-wrapper"
-              style={{ marginRight: "20px", marginLeft: "-13px" }}
-            >
-              {store.getState().orders.length !== 0 && (
-                <div className="numOfOrder">
-                  {store.getState().orders.length}
-                </div>
-              )}
-            </li>
           </ul>
         </div>
       </nav>
