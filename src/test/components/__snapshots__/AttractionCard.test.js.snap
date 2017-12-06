@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AttractionCard 1`] = `
+<div
+  class="col s12"
+>
+  <div
+    class="card horizontal hoverable"
+  >
+    <div
+      class="card-image large"
+    >
+      <img
+        style={
+          Object {
+            "height": "217px",
+            "width": "230px",
+          }
+        }
+      />
+    </div>
+    <div
+      class="card-stacked"
+    >
+      <div
+        class="card-content"
+      >
+        <h5
+          style={
+            Object {
+              "marginBottom": "20px",
+            }
+          }
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col s4"
+          >
+            <ul>
+              <li>
+                <i
+                  className="material-icons"
+                >
+                  location_on
+                </i>
+              </li>
+              <li>
+                <i
+                  className="material-icons"
+                >
+                  attach_money
+                </i>
+                <span>
+                  Rp  
+                  /Pax
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="col s8 paragraph"
+            style={
+              Object {
+                "marginTop": "23px",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        class="card-action"
+      >
+        <button
+          class="btn waves-effect waves-light"
+          name="action"
+          type="submit"
+        >
+          Add to Cart
+          <i
+            class="material-icons right"
+          >
+            add_shopping_cart
+          </i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

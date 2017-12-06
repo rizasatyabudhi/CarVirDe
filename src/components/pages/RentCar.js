@@ -11,7 +11,7 @@ import {
 import { store } from "../../index";
 import { Link } from "react-router-dom";
 
-class RentCar extends Component {
+export class RentCar extends Component {
   componentDidMount() {
     this.props.startFetchCars();
   }
@@ -22,21 +22,21 @@ class RentCar extends Component {
       <div className="container">
         <div className="row">
           {cars ? (
-            cars.map((car, index) => {
+            cars.map((cars, index) => {
               return (
                 <CarCard
                   // image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg/1200px-2014_Honda_Jazz_%28GK5_MY15%29_VTi-L_hatchback_%282016-01-04%29_01.jpg"
-                  foto={car.foto}
-                  tipe={car.tipe}
-                  merk={car.merk}
-                  transmisi={car.transmisi}
-                  tahun={car.tahun}
-                  kapasitas={car.kapasitas}
-                  harga={car.harga}
-                  alamat={car.alamat}
+                  foto={cars.foto}
+                  tipe={cars.tipe}
+                  merk={cars.merk}
+                  transmisi={cars.transmisi}
+                  tahun={cars.tahun}
+                  kapasitas={cars.kapasitas}
+                  harga={cars.harga}
+                  alamat={cars.alamat}
                   // onClick={e => {
                   //   e.preventDefault();
-                  //   this.props.addOrderCar(car);
+                  //   this.props.addOrderCar(cars);
                   // }}
                   onClick={e => {
                     e.preventDefault();
@@ -47,7 +47,7 @@ class RentCar extends Component {
                       timeout: 2500
                       // offset: 100
                     });
-                    this.props.addOrderCar(car);
+                    this.props.addOrderCar(cars);
                   }}
                 />
               );

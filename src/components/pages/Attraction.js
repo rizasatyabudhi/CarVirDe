@@ -38,12 +38,6 @@ class Attraction extends Component {
                   harga={attraction.harga}
                   deskripsi={attraction.deskripsi}
                   foto={attraction.foto}
-                  // onClick={e => {
-                  //   e.preventDefault();
-                  //   !orders.attractionPackage
-                  //     ? this.props.addOrderAttraction(attraction)
-                  //     : alert("You have selected with travel package");
-                  // }
                   onClick={e => {
                     e.preventDefault();
                     Alert.success("Berhasil ditambah ke keranjang", {
