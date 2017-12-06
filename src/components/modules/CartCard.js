@@ -6,7 +6,7 @@ export class CarCart extends Component {
     return (
       <div class="col s12">
         <div class="card-panel hoverable hover">
-          <h5>Orderan Rental Mobil</h5>
+          <h5>Orderan Rental Mobil OSJDPOJA</h5>
           <div className="row">
             <div className="col s10">
               <div className="card-content  ">
