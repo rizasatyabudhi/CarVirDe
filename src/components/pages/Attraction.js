@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 import AttractionCard from "../modules/Attraction/AttractionCard";
-import {
-  addOrderAttraction,
-  startFetchAttractions
-} from "../../actions/actions";
+import { addOrderAttraction } from "../../actions/actions";
 import { store } from "../../index";
 import { connect } from "react-redux";
 import Alert from "react-s-alert";
 import { Link } from "react-router-dom";
 
-class Attraction extends Component {
-  componentDidMount() {
-    this.props.startFetchAttractions();
-  }
+import gql from "graphql-tag";
+import { graphql } from "react-apollo";
+import { attractions } from "../../reducers/api";
 
+class Attraction extends Component {
   render() {
-    const { attractions, orders } = store.getState();
+    const { allAttractions } = this.props.data;
+    const { orders } = store.getState();
 
     if (orders.attractionPackage) {
       return (
@@ -29,8 +27,8 @@ class Attraction extends Component {
     return (
       <div className="container">
         <div className="row">
-          {attractions ? (
-            attractions.map((attraction, index) => {
+          {allAttractions ? (
+            allAttractions.map((attraction, index) => {
               return (
                 <AttractionCard
                   nama={attraction.nama}
@@ -84,10 +82,22 @@ class Attraction extends Component {
   }
 }
 
+const query = gql`
+  {
+    allAttractions {
+      alamat
+      deskripsi
+      foto
+      harga
+      nama
+    }
+  }
+`;
+
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, {
-  startFetchAttractions,
-  addOrderAttraction
-})(Attraction);
+
+export default connect(mapStateToProps, { addOrderAttraction })(
+  graphql(query)(Attraction)
+);

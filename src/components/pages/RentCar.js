@@ -10,12 +10,14 @@ import {
 } from "../../actions/actions";
 import { store } from "../../index";
 import { Link } from "react-router-dom";
+
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
 
 class RentCar extends Component {
   render() {
     const { allCars } = this.props.data;
+    const { orders } = store.getState();
     return (
       <div className="container">
         <div className="row">
@@ -47,7 +49,7 @@ class RentCar extends Component {
           ) : (
             <div>Loading...</div>
           )}
-          {/*
+
           {orders.length == 0 ? null : (
             <div>
               <div className="row">
@@ -69,7 +71,6 @@ class RentCar extends Component {
               </div>
             </div>
           )}
-          */}
         </div>
       </div>
     );
@@ -91,4 +92,10 @@ const query = gql`
   }
 `;
 
-export default connect(null, { addOrderCar })(graphql(query)(RentCar));
+function mapStateToProps(state) {
+  return { state };
+}
+
+export default connect(mapStateToProps, { addOrderCar })(
+  graphql(query)(RentCar)
+);

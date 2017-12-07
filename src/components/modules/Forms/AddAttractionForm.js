@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { startAddAttraction } from "../../../actions/actions";
 import Alert from "react-s-alert";
 
+import gql from "graphql-tag";
+import { graphql } from "react-apollo";
+
 class AddAttractionForm extends Component {
   constructor(props) {
     super(props);
@@ -16,20 +19,29 @@ class AddAttractionForm extends Component {
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
+
   // onFormSubmit(e) {
   //   e.preventDefault();
-  //   this.props.startAddAttraction(this.state, () => {
-  //     Alert.success("Berhasil Tambah Tempat Wisata", {
-  //       position: "bottom-right",
-  //       effect: "jelly",
-  //       beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
-  //       timeout: 2500
-  //     });
+  //   this.props.mutate(this.state);
+  //   Alert.success("Berhasil Tambah Tempat Wisata", {
+  //     position: "bottom-right",
+  //     effect: "jelly",
+  //     beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
+  //     timeout: 2500
   //   });
   // }
+
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.startAddAttraction(this.state);
+    this.props.mutate({
+      variables: {
+        nama: this.state.nama,
+        harga: this.state.harga,
+        alamat: this.state.alamat,
+        deskripsi: this.state.deskripsi,
+        foto: this.state.foto
+      }
+    });
     Alert.success("Berhasil Tambah Tempat Wisata", {
       position: "bottom-right",
       effect: "jelly",
@@ -37,6 +49,7 @@ class AddAttractionForm extends Component {
       timeout: 2500
     });
   }
+
   render() {
     return (
       <div className="row ">
@@ -95,9 +108,24 @@ class AddAttractionForm extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { state };
-}
-export default connect(mapStateToProps, { startAddAttraction })(
-  AddAttractionForm
-);
+const mutation = gql`
+  mutation addAttraction(
+    $nama: String
+    $alamat: String
+    $deskripsi: String
+    $foto: String
+    $harga: String
+  ) {
+    createAttraction(
+      nama: $nama
+      alamat: $alamat
+      deskripsi: $deskripsi
+      foto: $foto
+      harga: $harga
+    ) {
+      nama
+    }
+  }
+`;
+
+export default graphql(mutation)(AddAttractionForm);
