@@ -5,6 +5,7 @@ import Alert from "react-s-alert";
 
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
+import faker from "faker";
 
 class AddCarForm extends Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class AddCarForm extends Component {
       kapasitas: "",
       harga: "",
       alamat: "",
-      foto: ""
+      foto: "",
+      ownerName: ""
     };
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -34,7 +36,8 @@ class AddCarForm extends Component {
         kapasitas: this.state.kapasitas,
         harga: this.state.harga,
         alamat: this.state.alamat,
-        foto: this.state.foto
+        foto: this.state.foto,
+        ownerName: faker.name.firstName()
       }
     });
     Alert.success("Berhasil Tambah Mobil", {
@@ -141,6 +144,7 @@ const mutation = gql`
     $tahun: String
     $transmisi: String
     $alamat: String
+    $ownerName: String!
   ) {
     createCar(
       foto: $foto
@@ -151,6 +155,7 @@ const mutation = gql`
       tahun: $tahun
       transmisi: $transmisi
       alamat: $alamat
+      owner: { name: $ownerName }
     ) {
       merk
       tipe

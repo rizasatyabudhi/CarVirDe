@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { startAddAttraction } from "../../../actions/actions";
 import Alert from "react-s-alert";
-
+import faker from "faker";
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
 
@@ -39,7 +39,8 @@ class AddAttractionForm extends Component {
         harga: this.state.harga,
         alamat: this.state.alamat,
         deskripsi: this.state.deskripsi,
-        foto: this.state.foto
+        foto: this.state.foto,
+        ownerName: faker.name.firstName()
       }
     });
     Alert.success("Berhasil Tambah Tempat Wisata", {
@@ -115,6 +116,7 @@ const mutation = gql`
     $deskripsi: String
     $foto: String
     $harga: String
+    $ownerName: String!
   ) {
     createAttraction(
       nama: $nama
@@ -122,6 +124,7 @@ const mutation = gql`
       deskripsi: $deskripsi
       foto: $foto
       harga: $harga
+      owner: { name: $ownerName }
     ) {
       nama
     }
