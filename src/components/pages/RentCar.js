@@ -38,7 +38,6 @@ class RentCar extends Component {
                     Alert.success("Berhasil ditambah ke keranjang", {
                       position: "bottom-right",
                       effect: "jelly",
-                      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
                       timeout: 2500
                     });
                     this.props.addOrderCar(car);

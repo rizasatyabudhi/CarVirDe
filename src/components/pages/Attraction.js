@@ -47,7 +47,6 @@ class Attraction extends Component {
                     Alert.success("Berhasil ditambah ke keranjang", {
                       position: "bottom-right",
                       effect: "jelly",
-                      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
                       timeout: 2500,
                       onShow: () => {
                         this.props.addOrderAttraction(attraction);

@@ -16,20 +16,8 @@ class AddAttractionForm extends Component {
       deskripsi: "",
       foto: ""
     };
-
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
-
-  // onFormSubmit(e) {
-  //   e.preventDefault();
-  //   this.props.mutate(this.state);
-  //   Alert.success("Berhasil Tambah Tempat Wisata", {
-  //     position: "bottom-right",
-  //     effect: "jelly",
-  //     beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
-  //     timeout: 2500
-  //   });
-  // }
 
   onFormSubmit(e) {
     e.preventDefault();
@@ -46,7 +34,6 @@ class AddAttractionForm extends Component {
     Alert.success("Berhasil Tambah Tempat Wisata", {
       position: "bottom-right",
       effect: "jelly",
-      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
       timeout: 2500
     });
   }

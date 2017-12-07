@@ -10,6 +10,9 @@ import { connect } from "react-redux";
 import { store } from "../../index";
 import shortid from "shortid";
 
+import gql from "graphql-tag";
+import { graphql } from "react-apollo";
+
 class Cart extends Component {
   constructor() {
     super();
@@ -49,10 +52,6 @@ class Cart extends Component {
         </h4>
       );
     }
-
-    // const coba = attractionPackage.map((value, index) => {
-    //   return value.nama;
-    // });
 
     return (
       <div className="container">
@@ -113,7 +112,36 @@ class Cart extends Component {
   }
 }
 
+const mutation = gql`
+  mutation addCarOrder(
+    $foto: String
+    $harga: String
+    $kapasitas: String
+    $merk: String
+    $tipe: String
+    $tahun: String
+    $transmisi: String
+    $alamat: String
+    $orderName: String!
+  ) {
+    createCarOrder(
+      foto: $foto
+      harga: $harga
+      kapasitas: $kapasitas
+      merk: $merk
+      tipe: $tipe
+      tahun: $tahun
+      transmisi: $transmisi
+      alamat: $alamat
+      orderedBy: { nama: $orderName }
+    ) {
+      id
+    }
+  }
+`;
+
 function mapStateToProps(state) {
   return { state };
 }
-export default connect(mapStateToProps, {})(Cart);
+
+export default connect(mapStateToProps, {})(graphql(mutation)(Cart));

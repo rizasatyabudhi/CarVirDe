@@ -43,7 +43,6 @@ class AddCarForm extends Component {
     Alert.success("Berhasil Tambah Mobil", {
       position: "bottom-right",
       effect: "jelly",
-      beep: "http://s-alert-demo.meteorapp.com/beep.mp3",
       timeout: 2500
     });
     // .then(() => this.props.data.refetch());
