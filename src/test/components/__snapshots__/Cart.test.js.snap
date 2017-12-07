@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AttractionCart 1`] = `
+<div
+  class="col s12"
+>
+  <div
+    class="card-panel hoverable"
+  >
+    <h5>
+      Orderan Tempat Wisata
+    </h5>
+    <div
+      className="row"
+    >
+      <div
+        className="col s10"
+      >
+        <div
+          className="card-content  "
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s6"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Attraction Name :
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Location :
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="col s6"
+              style={
+                Object {
+                  "marginTop": "20px",
+                }
+              }
+            >
+              <span
+                className="category"
+              >
+                Tanggal Kedatangan: 
+              </span>
+              <input
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col s2"
+      >
+        <h5>
+          Rp 
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render AttractionPackageCart 1`] = `
+<div
+  class="col s12"
+>
+  <div
+    class="card-panel hoverable"
+    style={
+      Object {
+        "height": "470px",
+      }
+    }
+  >
+    <h5>
+      Orderan Paket Wisata
+    </h5>
+    <div
+      class="col s4"
+    >
+      <div
+        class="card horizontal z-depth-3"
+      >
+        <div
+          class="card-stacked"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              className="col s12"
+            >
+              <p
+                style={
+                  Object {
+                    "fontWeight": "800",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col s12"
+              >
+                <ul>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      location_on
+                    </i>
+                  </li>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      attach_money
+                    </i>
+                    <span>
+                      Rp  
+                      /Pax
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="col s12 paragraph"
+                style={
+                  Object {
+                    "marginTop": "23px",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col s4"
+    >
+      <div
+        class="card horizontal z-depth-3"
+      >
+        <div
+          class="card-stacked"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              className="col s12"
+            >
+              <p
+                style={
+                  Object {
+                    "fontWeight": "800",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col s12"
+              >
+                <ul>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      location_on
+                    </i>
+                  </li>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      attach_money
+                    </i>
+                    <span>
+                      Rp  
+                      /Pax
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="col s12 paragraph"
+                style={
+                  Object {
+                    "marginTop": "23px",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col s4"
+    >
+      <div
+        class="card horizontal z-depth-3"
+      >
+        <div
+          class="card-stacked"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              className="col s12"
+            >
+              <p
+                style={
+                  Object {
+                    "fontWeight": "800",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col s12"
+              >
+                <ul>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      location_on
+                    </i>
+                  </li>
+                  <li>
+                    <i
+                      className="material-icons"
+                    >
+                      attach_money
+                    </i>
+                    <span>
+                      Rp  
+                      /Pax
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="col s12 paragraph"
+                style={
+                  Object {
+                    "marginTop": "23px",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col s4"
+      style={
+        Object {
+          "marginTop": "20px",
+        }
+      }
+    >
+      <span
+        className="category"
+      >
+        Tanggal Kedatangan: 
+      </span>
+      <input
+        type="text"
+      />
+    </div>
+    <div
+      className="col s12"
+    >
+      <h5
+        className="right"
+      >
+        Rp 
+      </h5>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render CarCart 1`] = `
+<div
+  class="col s12"
+>
+  <div
+    class="card-panel hoverable hover"
+  >
+    <h5>
+      Orderan Rental Mobil
+    </h5>
+    <div
+      className="row"
+    >
+      <div
+        className="col s10"
+      >
+        <div
+          className="card-content  "
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col s6"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Tipe Mobil  :
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Merk Mobil  :
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="col s6"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Tahun     :
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col s12"
+                    >
+                      <span
+                        className="category"
+                      >
+                        Transmisi  : 
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="col s12"
+            >
+              <span
+                className="category"
+              >
+                Pakai Supir: 
+              </span>
+              <input
+                class="with-gap"
+                id="yes"
+                name="group"
+                type="radio"
+              />
+              <label
+                className="label-style"
+                for="yes"
+              >
+                Ya
+              </label>
+              <input
+                class="with-gap"
+                id="no"
+                name="group"
+                type="radio"
+              />
+              <label
+                className="label-style"
+                for="no"
+              >
+                Tidak
+              </label>
+            </div>
+            <div
+              className="col s4"
+              style={
+                Object {
+                  "marginTop": "20px",
+                }
+              }
+            >
+              <span
+                className="category"
+              >
+                Tanggal Rental: 
+              </span>
+              <input
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col s2"
+      >
+        <h5>
+          Rp 
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+`;

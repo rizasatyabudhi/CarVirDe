@@ -36,7 +36,9 @@
     "transform": {
       "^.+\\.js?$": "babel-jest"
     },
-    "transformIgnorePatterns": ["!node_modules/react-runtime"]
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,6 +48,9 @@
     "json-server": "json-server --watch -p 4000 db.json"
   },
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "enzyme-to-json": "^3.2.2"
   }
 }
