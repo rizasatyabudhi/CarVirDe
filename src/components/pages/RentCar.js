@@ -91,4 +91,4 @@ const query = gql`
   }
 `;
 
-export default graphql(query)(RentCar);
+export default connect(null, { addOrderCar })(graphql(query)(RentCar));
