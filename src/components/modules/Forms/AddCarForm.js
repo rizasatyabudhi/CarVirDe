@@ -45,7 +45,6 @@ class AddCarForm extends Component {
       effect: "jelly",
       timeout: 2500
     });
-    // .then(() => this.props.data.refetch());
   }
 
   render() {
@@ -162,5 +161,4 @@ const mutation = gql`
   }
 `;
 
-// export default connect(mapStateToProps, { addCar, startAddCar })(AddCarForm);
 export default graphql(mutation)(AddCarForm);

@@ -12,6 +12,7 @@ import shortid from "shortid";
 
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
+import faker from "faker";
 
 class Cart extends Component {
   constructor() {
@@ -19,6 +20,19 @@ class Cart extends Component {
     this.state = {
       book: ""
     };
+    this.onBookClick = this.onBookClick.bind(this);
+  }
+
+  onBookClick(e) {
+    e.preventDefault();
+    this.setState({ book: shortid.generate() }, () => {
+      this.props.mutate({
+        variables: {
+          nama: faker.name.firstName(),
+          bookingCode: this.state.book
+        }
+      });
+    });
   }
 
   render() {
@@ -99,10 +113,7 @@ class Cart extends Component {
           <button
             class="btn waves-effect waves-light"
             name="action"
-            onClick={e => {
-              e.preventDefault();
-              this.setState({ book: shortid.generate() });
-            }}
+            onClick={this.onBookClick}
           >
             Bayar
           </button>
@@ -113,28 +124,8 @@ class Cart extends Component {
 }
 
 const mutation = gql`
-  mutation addCarOrder(
-    $foto: String
-    $harga: String
-    $kapasitas: String
-    $merk: String
-    $tipe: String
-    $tahun: String
-    $transmisi: String
-    $alamat: String
-    $orderName: String!
-  ) {
-    createCarOrder(
-      foto: $foto
-      harga: $harga
-      kapasitas: $kapasitas
-      merk: $merk
-      tipe: $tipe
-      tahun: $tahun
-      transmisi: $transmisi
-      alamat: $alamat
-      orderedBy: { nama: $orderName }
-    ) {
+  mutation addBooking($nama: String!, $bookingCode: String) {
+    createCustomer(nama: $nama, bookingCode: $bookingCode) {
       id
     }
   }
